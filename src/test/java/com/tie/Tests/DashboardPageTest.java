@@ -65,6 +65,7 @@ public class DashboardPageTest {
 		Assert.assertTrue(dashboardPage.verifySalesParentTab(), "Paybills  tab is present or not...");
 	}
 	
+	/*
 	@Test(priority = 3, description="Company Name Test...")
 	@Severity(SeverityLevel.BLOCKER)
 	@Description("user should be able to see company name....")	
@@ -73,7 +74,8 @@ public class DashboardPageTest {
 		Assert.assertTrue(dashboardPage.verifyCompanytName(), "Company name is display is present or not...");
 	}
 	
-
+*/
+	
 	@Test(priority = 4, description="Verify Sales Menu....")
 	@Severity(SeverityLevel.BLOCKER)
 	@Description("user should be able to see sales menu...")	

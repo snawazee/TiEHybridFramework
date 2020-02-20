@@ -9,28 +9,27 @@ public class DashboardPage extends BasePage {
 	WebDriver driver;
 	TestUtil TestUtil;
 
-	By header = By.xpath("//div[@class='client-name-section']");
-	By CompanyName = By.xpath("//div[@class='client-name-section']");
-	By MyAccount = By.xpath("li>a#nav-primary-home");
-	By AccountName = By.xpath("//div[contains(@class,'basic-info_name')]");
-	By SalesParentTab = By.xpath("//div[@class='nav-link']");
-	By PayBillsParentTab = By.xpath("(//div[contains(.,'PAYBILLS')])[10]");
-	By InvoiceMenu = By.xpath("(//div[contains(.,'INVOICES')])[7]");
-	By PayBillsOverview = By.xpath("(//div[@class='sub-nav-link'])[1]");
-	By SalesOverview = By.xpath("(//div[@class='sub-nav-link'])[1]");
-	By Customer = By.xpath("(//div[@class='sub-nav-link'])[2]");
-	By SalesTransactiom = By.xpath("(//div[@class='sub-nav-link'])[3]");
-	By SalesReport = By.xpath("(//div[@class='sub-nav-link'])[4]");
+	
+	By PayBillsParentTab = By.id("payTabId");
+	By PayBillsOverview = By.id("ovrwId");
+	By BillsMenu =By.id("billsId");
+	By VendorMenu =By.id("vendorId");
+	By PayBillsTransactionMenu = By.id("transId");
+	By PayBillsReport = By.id("reportsId");
+	////
+	
+	By SalesParentTab = By.id("salestabId");
+	By SalesOverview = By.id("salesTabOvrvwId");
+	By Customer = By.id("custId");
+	By InvoiceMenu = By.id("InvId");
+	By SalesTransactiom = By.id("salesTransId");
+	By SalesReport = By.id("salesTabReportsId");
 	By PayBillsButton = By.xpath("//div[@class='nav-dropdown']/div[contains(.,'TRANSACTIONS')]");
-	By VendorMenu =By.xpath("(//div[@class='sub-nav-link'])[3]");
-	By PayBillsTransactionMenu = By.xpath("(//div[@class='sub-nav-link'])[4]");
-	By PayBillsReportMenu =By.xpath("(//div[contains(.,'REPORTS')])[7]");
-	By BillsMenu =By.xpath("//div[@class='nav-dropdown']/div[contains(.,'BILLS')]");
+	
 
 	public DashboardPage(WebDriver driver) {
 		this.driver = driver;
 		TestUtil = new TestUtil(driver);
-		TestUtil.waitForElementPresent(header);
 
 	}
 
@@ -45,16 +44,6 @@ public class DashboardPage extends BasePage {
 
 	public boolean verifyPayBillsButton() {
 		return TestUtil.doIsDisplayed(PayBillsButton);
-	}
-	
-	public boolean verifyCompanytName() {
-		return TestUtil.doIsDisplayed(CompanyName);
-	}
-
-	public boolean verifyLoggedAccountName() throws Exception {
-		TestUtil.doClick(MyAccount);
-		Thread.sleep(2000);
-		return TestUtil.doIsDisplayed(AccountName);
 	}
 	
 	
@@ -83,7 +72,7 @@ public class DashboardPage extends BasePage {
 	public void veriyPayBillsReportMenuTab() throws Exception{
 		TestUtil.doClick(PayBillsParentTab);
 		Thread.sleep(2000);
-		TestUtil.doClick(PayBillsReportMenu);
+		TestUtil.doClick(PayBillsReport);
 	}
 	
 	public void veriySalesOverviewTab() throws Exception{

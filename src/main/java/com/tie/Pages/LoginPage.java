@@ -13,14 +13,14 @@ public class LoginPage extends BasePage {
 	TestUtil TestUtil;
 
 	// 1. Page Objects / By Locators
-	By logo = By.xpath("//img[@class='logo-img']");
-	By emailID = By.xpath("//input[@name='email']");
-	By password = By.xpath("//input[@name='password']");
-	By loginButton = By.xpath("//button[contains(.,'Login')]");
-	By signUpLink = By.xpath("//p[@class='font_lightblue']");
-	By forgotPassword = By.xpath("//span[contains(.,'reset now')]");
-	By tesrmsandService = By.xpath("//span[contains(.,'Terms of Service')]");
-	By privacyPolicy = By.xpath("//span[contains(.,'Privacy Policy')]");
+	By logo = By.id("logoId");
+	By emailID = By.id("emailId");
+	By password = By.xpath("//input[@id='passId']");
+	By loginButton = By.id("loginBtnId");
+	By signUpLink = By.xpath("//p[@id='signUpId']");
+	By forgotPassword = By.id("resetPassId");
+	By tesrmsandService = By.id("termsId");
+	By privacyPolicy = By.id("privacyId");
 	By businessOwnerBtn = By.xpath("//button[contains(.,'Business Owner')]");
 	By AccountantUserBtn = By.xpath("//button[contains(.,'Accountant')]");
 	By ownerAssisistantBtn = By.xpath("//button[contains(.,'Owner Assistant')]");
