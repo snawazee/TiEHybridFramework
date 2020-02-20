@@ -14,8 +14,6 @@ import com.tie.Base.BasePage;
 import com.tie.Listeners.TestAllureListener;
 import com.tie.Pages.DashboardPage;
 import com.tie.Pages.LoginPage;
-import com.tie.util.Constants;
-
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
