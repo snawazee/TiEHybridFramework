@@ -13,11 +13,11 @@ public class LoginPage extends BasePage {
 	TestUtil TestUtil;
 
 	// 1. Page Objects / By Locators
-	By logo = By.xpath("//img[@alt='logo']");
+	By logo = By.xpath("//img[@class='logo-img']");
 	By emailID = By.xpath("//input[@name='email']");
 	By password = By.xpath("//input[@name='password']");
 	By loginButton = By.xpath("//button[contains(.,'Login')]");
-	By signUpLink = By.xpath("//p[contains(.,'Register for a new account')]");
+	By signUpLink = By.xpath("//p[@class='font_lightblue']");
 	By forgotPassword = By.xpath("//span[contains(.,'reset now')]");
 	By tesrmsandService = By.xpath("//span[contains(.,'Terms of Service')]");
 	By privacyPolicy = By.xpath("//span[contains(.,'Privacy Policy')]");
@@ -56,13 +56,11 @@ public class LoginPage extends BasePage {
 
 	@Step("checking logo is present or not....")
 	public boolean ValidateLogo(){
-		TestUtil.Highlight_Element(logo);
 		return TestUtil.doIsDisplayed(logo);
 	}
 	
 	@Step("checking sigup link is present or not....")
 	public boolean isSignUpLinkExists() {
-		TestUtil.Highlight_Element(signUpLink);
 		return TestUtil.doIsDisplayed(signUpLink);
 		
 	}
@@ -154,12 +152,12 @@ public class LoginPage extends BasePage {
 	}
 	
 	@Step("login with {0} and {1}")
-	public HomePage doLogin(String username, String pwd) {
+	public DashboardPage doLogin(String username, String pwd) {
 		TestUtil.doSendKeys(emailID, username);
 		TestUtil.doSendKeys(password, pwd);
 		TestUtil.doClick(loginButton);
 
-		return new HomePage(driver);
+		return new DashboardPage(driver);
 
 	}
 

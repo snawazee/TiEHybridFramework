@@ -3,13 +3,23 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tie.Tests.InvoicePageTest">
+      <class name="com.tie.Tests.LoginPageTest">
         <methods>
+          <include name="VerifyTearmAndServiceLinkExistsTest"/>
+          <include name="VerifyregisterWithOwnerAssistantTest"/>
+          <include name="verifyisPrivacyPolicyLinkExistsTest"/>
+          <include name="doPasswordResetTest"/>
+          <include name="TiELogoTest"/>
+          <include name="verifyisForgotPasswordExistsTest"/>
+          <include name="verifyLoginPageTitleTest"/>
+          <include name="verifyLoginTest"/>
+          <include name="verifySignUpLinkTest"/>
           <include name="setUp"/>
-          <include name="createInvoiceTest"/>
+          <include name="VerifyregisterWithAccountantUserTest"/>
+          <include name="VerifyregisterWithBusinessAccountTest"/>
           <include name="quitBrowser"/>
         </methods>
-      </class> <!-- com.tie.Tests.InvoicePageTest -->
+      </class> <!-- com.tie.Tests.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

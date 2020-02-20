@@ -1,5 +1,7 @@
 package com.tie.util;
 
+
+
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -18,6 +20,7 @@ public class TestUtil {
 
 	WebDriver driver;
 	WebDriverWait wait;
+
 
 	public TestUtil(WebDriver driver) {
 		this.driver = driver;
@@ -165,6 +168,7 @@ public class TestUtil {
 		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 	}
 	
+	@SuppressWarnings("deprecation")
 	public void waitForElementClickable(By locator) {
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.elementToBeClickable(locator));
@@ -199,31 +203,36 @@ public class TestUtil {
 	
 	public static void doAcceptAlert(WebDriver driver)
 	{
-		WebDriverWait wait=new WebDriverWait(driver, 15);
+
+		WebDriverWait wait=new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.alertIsPresent()).accept();
 	}
 	
 	public static void doDismissAlert(WebDriver driver)
 	{
-		WebDriverWait wait=new WebDriverWait(driver, 15);
+
+		WebDriverWait wait=new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.alertIsPresent()).dismiss();
 	}
 	
 	public static void verifyAlertText(WebDriver driver,String expectedText)
 	{
-		WebDriverWait wait=new WebDriverWait(driver, 15);
+
+		WebDriverWait wait=new WebDriverWait(driver, 20);
 		String alert_text_actual=wait.until(ExpectedConditions.alertIsPresent()).getText();
 		Assert.assertEquals(alert_text_actual, expectedText);
 	}
 	
 	public static List<WebElement> waitForMultipleWebElement(WebDriver driver, By byLocator) {
-		WebDriverWait wait = new WebDriverWait(driver, 15);
+
+		WebDriverWait wait = new WebDriverWait(driver, 20);
 		List<WebElement> allElements=wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(byLocator));
 		return allElements;
 	}
 	
 	public static List<WebElement> waitForMultipleWebElement(WebDriver driver, By byLocator,int time) {	
-		WebDriverWait wait = new WebDriverWait(driver, time);
+
+		WebDriverWait wait = new WebDriverWait(driver, 20);
 		List<WebElement> allElements=wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(byLocator));
 		return allElements;
 	}

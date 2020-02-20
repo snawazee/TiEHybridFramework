@@ -1,6 +1,7 @@
 package com.tie.Pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
@@ -13,9 +14,8 @@ import io.qameta.allure.Step;
 		WebDriver driver;
 		TestUtil TestUtil;
 
-		By SalesMenu = By.xpath("//div[@class='nav-link checkActive']");
-		By InvoiceSubMenu = By.xpath("//div[@class='sub-nav-link posRelative']");
-		
+		By SalesParentTab = By.xpath("//div[@class='nav-link']");
+		By InvoiceMenu = By.xpath("(//div[contains(.,'INVOICES')])[7]");
 		By CustDropDown =By.xpath("//select[@id='id1']");
 		By StartDate = By.xpath("//span[@class='fa fa-calendar text-primary calendarIcon']");
 		By EndDate = By.xpath("//span[@class='fa fa-calendar calendarIcon text-primary']");
@@ -24,7 +24,7 @@ import io.qameta.allure.Step;
 		By AddInvoiceBtn =By.xpath("//span[@class='newCustBtn']");
 		By SalesPerson =By.xpath("//input[@name='salesPerson']");
 		By Description = By.xpath("//input[@placeholder='Description']");
-		By ItemTextBox= By.xpath("//input[@class='form-control border-dashed ng-pristine ng-valid ng-touched']");
+		By ItemTextBox= By.xpath("[placeholder='Name']");
 		By ItemAddBtn = By.xpath("//p[contains(.,'Add Item')]')");
 		By AddItemBtn = By.xpath("(//button[@type='button'])[1]");
 		By SaveBtn = By.xpath("//button[contains(.,'Save')]");
@@ -33,6 +33,7 @@ import io.qameta.allure.Step;
 		By TaxableChekBox = By.cssSelector("[for='taxable']");
 		By ProductRadioBtn= By.xpath("//label[@for='product']");
 		By ItemSaveBtn=By.xpath("//button[@type='submit']");
+		By itemList=By.xpath("//li[contains(.,'Book')]");
 		
 		
 		public InvoicePage(WebDriver driver) {
@@ -41,24 +42,61 @@ import io.qameta.allure.Step;
 		}
 			
 		@Step("Creating Invoice......")
-		public void createInvoice() throws Exception {
-			TestUtil.doClick(SalesMenu);
-			TestUtil.doClick(InvoiceSubMenu);
-			Thread.sleep(2000);
+		public void createInvoice(){
+			TestUtil.doClick(SalesParentTab);
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			TestUtil.doClick(InvoiceMenu);
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			TestUtil.doClick(AddInvoiceBtn);
+			try {
+				Thread.sleep(4000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			Select custName = new Select(driver.findElement(By.id("customerId")));
 			custName.selectByIndex(1);
-			TestUtil.doSendKeys(SalesPerson, "Safdar Nawaz");
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("window.scrollBy(0,250)", "");
+			
 			TestUtil.doClick(ItemTextBox);
-			TestUtil.doClick(ItemAddBtn);
-			TestUtil.doClick(ItemNametextBox);
-			TestUtil.doSendKeys(PriceTextBox, "1000");
-			TestUtil.doClick(TaxableChekBox);
-			TestUtil.doClick(ProductRadioBtn);
-			TestUtil.doClick(ItemSaveBtn);
-			TestUtil.doSendKeys(Description, "Testing Descriptions");
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			TestUtil.doClick(itemList);
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			TestUtil.doClick(AddItemBtn);
-			Thread.sleep(1000);
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			TestUtil.doClick(SaveBtn);
 			
 			

@@ -27,17 +27,12 @@ public class BasePage {
 		return tldriver.get();
 	}
 
-
-	/**
-	 * this method is used to initialize the driver on the basis of browser name
-	 * 
-	 * @param browser
-	 * @return driver
-	 */
 	public WebDriver init_driver(Properties prop) {
 		String browser = prop.getProperty("browser");
 
 		if (browser.equals("chrome")) {
+			//System.setProperty("webdriver.chrome.driver","./Drivers/chromedriver.exe");
+			//driver = new ChromeDriver();
 			WebDriverManager.chromedriver().setup();
 			//driver = new ChromeDriver();
 			tldriver.set(new ChromeDriver());
@@ -67,17 +62,12 @@ public class BasePage {
 		return getDriver();
 	}
 
-	/**
-	 * this method is used to initialize the properties from config.properties
-	 * file...
-	 * 
-	 * @return prop
-	 */
+	
 	public Properties init_properties() {
 
 		prop = new Properties();
 		try {
-			FileInputStream ip = new FileInputStream("D:\\TiEHybridFramework\\src\\main\\java\\com\\tie\\Config\\config.properties");
+			FileInputStream ip = new FileInputStream("C:\\Users\\Safdar\\git\\TiEHybridFramework\\src\\main\\java\\com\\tie\\Config\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

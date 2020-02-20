@@ -1,175 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="25" passed="25">
   <reporter-output>
+    <line>
+      <![CDATA[Test started--> verifyLoginPageTitleTest
+]]>
+    </line>
+    <line>
+      <![CDATA[login page title is: TIE Accounting]]>
+    </line>
+    <line>
+      <![CDATA[Test ended--> verifyLoginPageTitleTest]]>
+    </line>
+    <line>
+      <![CDATA[Test started--> verifyLogoTest
+]]>
+    </line>
+    <line>
+      <![CDATA[Test ended--> verifyLogoTest]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="70663" started-at="2020-02-19T16:50:35 IST" finished-at="2020-02-19T16:51:46 IST">
+  <suite name="Suite" duration-ms="164187" started-at="2020-02-20T13:31:02 IST" finished-at="2020-02-20T13:33:47 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="70663" started-at="2020-02-19T16:50:35 IST" finished-at="2020-02-19T16:51:46 IST">
-      <class name="com.tie.Tests.InvoicePageTest">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.tie.Tests.InvoicePageTest@7c041b41]" name="setUp" is-config="true" duration-ms="69820" started-at="2020-02-19T16:50:35 IST" finished-at="2020-02-19T16:51:45 IST">
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
-            <message>
-              <![CDATA[Error communicating with the remote browser. It may have died.
-Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
-System info: host: 'DIPL-5CG706063P', ip: '192.168.10.104', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
-Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Safdar\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54870}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b98b1af8d6935bb7703f333df86314ac]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
-System info: host: 'DIPL-5CG706063P', ip: '192.168.10.104', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
-Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Safdar\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54870}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b98b1af8d6935bb7703f333df86314ac
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:603)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:282)
-at com.tie.Base.BasePage.init_driver(BasePage.java:65)
-at com.tie.Tests.InvoicePageTest.setUp(InvoicePageTest.java:32)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
-at org.testng.TestRunner.beforeRun(TestRunner.java:613)
-at org.testng.TestRunner.run(TestRunner.java:584)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:61)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:45)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:43)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-... 27 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:1175 after 60000 ms
-at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
-at java.util.concurrent.CompletableFuture.get(Unknown Source)
-at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:55)
-... 36 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:1175 after 60000 ms
-at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
-at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
-at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:680)
-at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:755)
-at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:483)
-at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+    <test name="Test" duration-ms="164187" started-at="2020-02-20T13:31:02 IST" finished-at="2020-02-20T13:33:47 IST">
+      <class name="com.tie.Tests.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tie.Tests.LoginPageTest@532721fd]" name="setUp" is-config="true" duration-ms="23935" started-at="2020-02-20T13:31:48 IST" finished-at="2020-02-20T13:32:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.tie.Tests.InvoicePageTest@7c041b41]" name="setUp" is-config="true" duration-ms="-1582111306118" started-at="2020-02-19T16:51:46 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.tie.Tests.LoginPageTest@532721fd]" name="verifyLoginPageTitleTest" duration-ms="152" started-at="2020-02-20T13:32:12 IST" description="verifying login page title" finished-at="2020-02-20T13:32:12 IST">
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="createInvoiceTest()[pri:1, instance:com.tie.Tests.InvoicePageTest@7c041b41]" name="createInvoiceTest" duration-ms="0" started-at="2020-02-19T16:51:46 IST" finished-at="2020-02-19T16:51:46 IST">
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
-            <message>
-              <![CDATA[Error communicating with the remote browser. It may have died.
-Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
-System info: host: 'DIPL-5CG706063P', ip: '192.168.10.104', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
-Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Safdar\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54870}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b98b1af8d6935bb7703f333df86314ac]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
-System info: host: 'DIPL-5CG706063P', ip: '192.168.10.104', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
-Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Safdar\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54870}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b98b1af8d6935bb7703f333df86314ac
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:603)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:282)
-at com.tie.Base.BasePage.init_driver(BasePage.java:65)
-at com.tie.Tests.InvoicePageTest.setUp(InvoicePageTest.java:32)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
-at org.testng.TestRunner.beforeRun(TestRunner.java:613)
-at org.testng.TestRunner.run(TestRunner.java:584)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:61)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:45)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:43)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-... 27 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:1175 after 60000 ms
-at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
-at java.util.concurrent.CompletableFuture.get(Unknown Source)
-at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:55)
-... 36 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:1175 after 60000 ms
-at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
-at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
-at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:680)
-at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:755)
-at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:483)
-at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-at java.lang.Thread.run(Unknown Source)
+            <line>
+              <![CDATA[Test started--> verifyLoginPageTitleTest
 ]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+            </line>
+            <line>
+              <![CDATA[login page title is: TIE Accounting]]>
+            </line>
+            <line>
+              <![CDATA[Test ended--> verifyLoginPageTitleTest]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitleTest -->
+        <test-method status="PASS" signature="TiELogoTest()[pri:2, instance:com.tie.Tests.LoginPageTest@532721fd]" name="TiELogoTest" duration-ms="289" started-at="2020-02-20T13:32:13 IST" description="Check logo is persent or not?" finished-at="2020-02-20T13:32:13 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Test started--> verifyLogoTest
+]]>
+            </line>
+            <line>
+              <![CDATA[Test ended--> verifyLogoTest]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TiELogoTest -->
+        <test-method status="PASS" signature="verifySignUpLinkTest()[pri:3, instance:com.tie.Tests.LoginPageTest@532721fd]" name="verifySignUpLinkTest" duration-ms="170" started-at="2020-02-20T13:32:13 IST" description="verifying signup link is Available on Login Page." finished-at="2020-02-20T13:32:13 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createInvoiceTest -->
-        <test-method status="SKIP" signature="quitBrowser()[pri:0, instance:com.tie.Tests.InvoicePageTest@7c041b41]" name="quitBrowser" is-config="true" duration-ms="-1582111306242" started-at="2020-02-19T16:51:46 IST" finished-at="1970-01-01T05:30:00 IST">
+        </test-method> <!-- verifySignUpLinkTest -->
+        <test-method status="PASS" signature="verifyisForgotPasswordExistsTest()[pri:4, instance:com.tie.Tests.LoginPageTest@532721fd]" name="verifyisForgotPasswordExistsTest" duration-ms="105" started-at="2020-02-20T13:32:13 IST" description="verifying forgot password link is Available on Login Page." finished-at="2020-02-20T13:32:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyisForgotPasswordExistsTest -->
+        <test-method status="PASS" signature="VerifyTearmAndServiceLinkExistsTest()[pri:5, instance:com.tie.Tests.LoginPageTest@532721fd]" name="VerifyTearmAndServiceLinkExistsTest" duration-ms="77" started-at="2020-02-20T13:32:13 IST" description="verifying Tearm And Service link is Available on Login Page." finished-at="2020-02-20T13:32:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTearmAndServiceLinkExistsTest -->
+        <test-method status="PASS" signature="verifyisPrivacyPolicyLinkExistsTest()[pri:6, instance:com.tie.Tests.LoginPageTest@532721fd]" name="verifyisPrivacyPolicyLinkExistsTest" duration-ms="93" started-at="2020-02-20T13:32:13 IST" description="verifying Privacy Policy link is Available on Login Page." finished-at="2020-02-20T13:32:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyisPrivacyPolicyLinkExistsTest -->
+        <test-method status="PASS" signature="VerifyregisterWithBusinessAccountTest()[pri:7, instance:com.tie.Tests.LoginPageTest@532721fd]" name="VerifyregisterWithBusinessAccountTest" duration-ms="6409" started-at="2020-02-20T13:32:13 IST" description="User should be able to Register with Business Account...." finished-at="2020-02-20T13:32:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyregisterWithBusinessAccountTest -->
+        <test-method status="PASS" signature="VerifyregisterWithAccountantUserTest()[pri:8, instance:com.tie.Tests.LoginPageTest@532721fd]" name="VerifyregisterWithAccountantUserTest" duration-ms="6150" started-at="2020-02-20T13:32:20 IST" description="User should be able to Register with Accountant User...." finished-at="2020-02-20T13:32:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyregisterWithAccountantUserTest -->
+        <test-method status="PASS" signature="VerifyregisterWithOwnerAssistantTest()[pri:9, instance:com.tie.Tests.LoginPageTest@532721fd]" name="VerifyregisterWithOwnerAssistantTest" duration-ms="6126" started-at="2020-02-20T13:32:26 IST" description="User should be able to Register with Owner Assistant...." finished-at="2020-02-20T13:32:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyregisterWithOwnerAssistantTest -->
+        <test-method status="PASS" signature="doPasswordResetTest()[pri:10, instance:com.tie.Tests.LoginPageTest@532721fd]" name="doPasswordResetTest" duration-ms="34093" started-at="2020-02-20T13:32:32 IST" description="To check that the forgot password link redirected to the forgot password page." finished-at="2020-02-20T13:33:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doPasswordResetTest -->
+        <test-method status="PASS" signature="verifyLoginTest()[pri:11, instance:com.tie.Tests.LoginPageTest@532721fd]" name="verifyLoginTest" duration-ms="5825" started-at="2020-02-20T13:33:06 IST" description="Verify that User is able to Login with Valid Credentials" finished-at="2020-02-20T13:33:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginTest -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.tie.Tests.LoginPageTest@532721fd]" name="quitBrowser" is-config="true" duration-ms="725" started-at="2020-02-20T13:33:46 IST" finished-at="2020-02-20T13:33:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- com.tie.Tests.InvoicePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.tie.Tests.LoginPageTest -->
+      <class name="com.tie.Tests.DashboardPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tie.Tests.DashboardPageTest@410954b]" name="setUp" is-config="true" duration-ms="45696" started-at="2020-02-20T13:31:02 IST" finished-at="2020-02-20T13:31:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySalesTabTest()[pri:1, instance:com.tie.Tests.DashboardPageTest@410954b]" name="verifySalesTabTest" duration-ms="85" started-at="2020-02-20T13:33:12 IST" description="verifying Sales Tab is Dispaying" finished-at="2020-02-20T13:33:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySalesTabTest -->
+        <test-method status="PASS" signature="verifyPayBillsTabTest()[pri:2, instance:com.tie.Tests.DashboardPageTest@410954b]" name="verifyPayBillsTabTest" duration-ms="59" started-at="2020-02-20T13:33:12 IST" description="Pay Bills Button Test..." finished-at="2020-02-20T13:33:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPayBillsTabTest -->
+        <test-method status="PASS" signature="verifyCompanytNameTest()[pri:3, instance:com.tie.Tests.DashboardPageTest@410954b]" name="verifyCompanytNameTest" duration-ms="91" started-at="2020-02-20T13:33:12 IST" description="Company Name Test..." finished-at="2020-02-20T13:33:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCompanytNameTest -->
+        <test-method status="PASS" signature="verifySalesParentTabTest()[pri:4, instance:com.tie.Tests.DashboardPageTest@410954b]" name="verifySalesParentTabTest" duration-ms="57" started-at="2020-02-20T13:33:12 IST" description="Verify Sales Menu...." finished-at="2020-02-20T13:33:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySalesParentTabTest -->
+        <test-method status="PASS" signature="veriyPayBillsOverviewTabTest()[pri:5, instance:com.tie.Tests.DashboardPageTest@410954b]" name="veriyPayBillsOverviewTabTest" duration-ms="3234" started-at="2020-02-20T13:33:12 IST" description="Verify Pay Bills Menu...." finished-at="2020-02-20T13:33:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriyPayBillsOverviewTabTest -->
+        <test-method status="PASS" signature="veriyBillsMenuTabTest()[pri:6, instance:com.tie.Tests.DashboardPageTest@410954b]" name="veriyBillsMenuTabTest" duration-ms="3214" started-at="2020-02-20T13:33:16 IST" description="Verify Bills Menu under Pay Bills...." finished-at="2020-02-20T13:33:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriyBillsMenuTabTest -->
+        <test-method status="PASS" signature="veriyVendorMenuTabTest()[pri:7, instance:com.tie.Tests.DashboardPageTest@410954b]" name="veriyVendorMenuTabTest" duration-ms="3226" started-at="2020-02-20T13:33:19 IST" description="Verify Vendor Menu under Pay Bills...." finished-at="2020-02-20T13:33:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriyVendorMenuTabTest -->
+        <test-method status="PASS" signature="veriyPayBillsTransactionMenuTabTest()[pri:8, instance:com.tie.Tests.DashboardPageTest@410954b]" name="veriyPayBillsTransactionMenuTabTest" duration-ms="3285" started-at="2020-02-20T13:33:22 IST" description="Verify transaction Menu under Pay Bills...." finished-at="2020-02-20T13:33:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriyPayBillsTransactionMenuTabTest -->
+        <test-method status="PASS" signature="veriyPayBillsReportMenuTabTest()[pri:9, instance:com.tie.Tests.DashboardPageTest@410954b]" name="veriyPayBillsReportMenuTabTest" duration-ms="3272" started-at="2020-02-20T13:33:25 IST" description="Verify reports Menu under Pay Bills...." finished-at="2020-02-20T13:33:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriyPayBillsReportMenuTabTest -->
+        <test-method status="PASS" signature="veriySalesOverviewTabTest()[pri:10, instance:com.tie.Tests.DashboardPageTest@410954b]" name="veriySalesOverviewTabTest" duration-ms="3216" started-at="2020-02-20T13:33:29 IST" description="Verify Overview Menu under Sales...." finished-at="2020-02-20T13:33:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriySalesOverviewTabTest -->
+        <test-method status="PASS" signature="veriyCustomerTabTest()[pri:11, instance:com.tie.Tests.DashboardPageTest@410954b]" name="veriyCustomerTabTest" duration-ms="3241" started-at="2020-02-20T13:33:32 IST" description="Verify Customer Menu under Sales...." finished-at="2020-02-20T13:33:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriyCustomerTabTest -->
+        <test-method status="PASS" signature="veriyInvoiceMenuTabTest()[pri:12, instance:com.tie.Tests.DashboardPageTest@410954b]" name="veriyInvoiceMenuTabTest" duration-ms="3264" started-at="2020-02-20T13:33:35 IST" description="Verify Invoice Menu under Sales...." finished-at="2020-02-20T13:33:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriyInvoiceMenuTabTest -->
+        <test-method status="PASS" signature="veriySalesTransactiomTabTest()[pri:13, instance:com.tie.Tests.DashboardPageTest@410954b]" name="veriySalesTransactiomTabTest" duration-ms="3319" started-at="2020-02-20T13:33:38 IST" description="Verify Transaction Menu under Sales...." finished-at="2020-02-20T13:33:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriySalesTransactiomTabTest -->
+        <test-method status="PASS" signature="veriySalesReportTabTest()[pri:14, instance:com.tie.Tests.DashboardPageTest@410954b]" name="veriySalesReportTabTest" duration-ms="3293" started-at="2020-02-20T13:33:42 IST" description="Verify Reports Menu under Sales...." finished-at="2020-02-20T13:33:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriySalesReportTabTest -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.tie.Tests.DashboardPageTest@410954b]" name="quitBrowser" is-config="true" duration-ms="732" started-at="2020-02-20T13:33:45 IST" finished-at="2020-02-20T13:33:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.tie.Tests.DashboardPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

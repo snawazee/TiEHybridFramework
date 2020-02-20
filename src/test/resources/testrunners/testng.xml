@@ -4,8 +4,8 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.tie.Tests.LoginPageTest"/>
-      <!-- class name="com.tie.Tests.HomePageTest"/> -->
-      <!-- class name="com.tie.Tests.ContactsPageTest"/> -->
+      <class name="com.tie.Tests.DashboardPageTest"/>
+      <!-- class name="com.tie.Tests.InvoicePageTest"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
