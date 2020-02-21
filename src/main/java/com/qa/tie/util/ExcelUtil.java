@@ -14,8 +14,7 @@ public class ExcelUtil {
 	public static Workbook book;
 	public static Sheet sheet;
 
-	public static String TESTDATA_SHEET_PATH = "D://QA//Framework//src//main//java//com//qa//hubspot"
-			+ "//testdata//HubSpotTestData.xlsx";
+	public static String TESTDATA_SHEET_PATH = "C://Users//Safdar//git//TiEHybridFramework//src//main//java//com//qa//tie//testdata//TiEData.xlsx";
 
 	public static Object[][] getTestData(String sheetName) {
 

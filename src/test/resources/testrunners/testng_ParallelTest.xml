@@ -13,8 +13,9 @@
 		<parameter name="browser" value="firefox" />
 		
 		<classes>
-			<class name="com.qa.tie.tests.LoginPageTest" />
-			<class name="com.qa.tie.tests.HomePageTest" />
+			<!-- class name="com.qa.tie.tests.LoginPageTest" /> -->
+			<!-- class name="com.qa.tie.tests.HomePageTest" /> -->
+			<!-- class name="com.qa.tie.tests.MyAccountPageTest" /> -->
 		</classes>
 	</test>
 
@@ -24,6 +25,7 @@
 		<classes>
 			<class name="com.qa.tie.tests.LoginPageTest" />
 			<class name="com.qa.tie.tests.HomePageTest" />
+			<class name="com.qa.tie.tests.MyAccountPageTest" /> 
 		</classes>
 	</test>
 

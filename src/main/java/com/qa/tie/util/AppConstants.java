@@ -11,6 +11,6 @@ public class AppConstants {
 	public final static String HOME_PAGE_TITLE = "TIE Accounting";
 	public final static String HOME_PAGE_HEADER = "QA Impact";
 	
-	public final static String CONTACTS_SHEET_NAME = "contacts";
+	public final static String COMPANY_SHEET_NAME = "Company";
 	
 }

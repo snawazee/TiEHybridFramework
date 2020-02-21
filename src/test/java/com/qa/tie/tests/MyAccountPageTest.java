@@ -1,35 +1,33 @@
 package com.qa.tie.tests;
-
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import com.qa.tie.base.BasePage;
-import com.qa.tie.page.InvoicePage;
 import com.qa.tie.page.HomePage;
 import com.qa.tie.page.LoginPage;
+import com.qa.tie.page.MyAccountPage;
 import com.qa.tie.util.AppConstants;
 import com.qa.tie.util.Credentials;
 import com.qa.tie.util.ExcelUtil;
 
 
-public class InvoicePageTest {
+
+public class MyAccountPageTest {
 
 	BasePage basePage;
 	Properties prop;
 	WebDriver driver;
 	LoginPage loginPage;
 	HomePage homePage;
-	InvoicePage invoicePage;
+	MyAccountPage myAccountPage;
 	Credentials userCred;
 
 
-	@BeforeMethod
+	@BeforeTest
 	public void setUp() {
 		basePage = new BasePage();
 		prop = basePage.init_properties();
@@ -39,29 +37,23 @@ public class InvoicePageTest {
 		loginPage = new LoginPage(driver);
 		userCred = new Credentials(prop.getProperty("username"), prop.getProperty("password"));
 		homePage = loginPage.doLogin(userCred);
-		invoicePage = homePage.goToInvoicePage();
+		myAccountPage = homePage.goToMyAccountPage();
 	}
 
-	@Test(priority = 1)
-	public void verifyContactsPageTitle() {
-		String title = invoicePage.getContactsPageTitle();
-		System.out.println("contacts page title is: " + title);
-		Assert.assertEquals(title, "Contacts");
-	}
 
 	@DataProvider
-	public Object[][] getContactsTestData() {
-		Object[][] data = ExcelUtil.getTestData(AppConstants.CONTACTS_SHEET_NAME);
+	public Object[][] getCompanyTestData() {
+		Object[][] data = ExcelUtil.getTestData(AppConstants.COMPANY_SHEET_NAME);
 		return data;
 	}
 
-	@Test(priority = 2, dataProvider = "getContactsTestData")
-	public void createContactsTest(String email, String firstName, String lastName, String jobTitle) {
-		invoicePage.createNewContact(email, firstName, lastName, jobTitle);
+	@Test(priority = 1, dataProvider = "getCompanyTestData")
+	public void createComapnyTest(String cName , String mail, String mobile, String add, String CT, String zip, String contact, String fullAdd ) {
+		myAccountPage.createNewCompany( cName ,  mail,  mobile,  add,  CT,  zip,  contact, fullAdd );
 		
 	}
 
-	@AfterMethod
+	@AfterTest
 	public void tearDown() {
 		driver.quit();
 	}

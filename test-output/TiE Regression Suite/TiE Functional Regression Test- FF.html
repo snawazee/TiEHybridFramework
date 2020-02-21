@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>TiE Functional Regression Test- FF</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>27/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 21 16:20:09 IST 2020</td>
+<td>Started on:</td><td>Fri Feb 21 19:29:38 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>175 seconds (175177 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (105 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,85 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.tie.tests.MyAccountPageTest.createContactsTest()'><b>createContactsTest</b><br>Test class: com.qa.tie.tests.MyAccountPageTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.qa.tie.tests.MyAccountPageTest.getContactsTestData() returned a null value
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2142582928", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2142582928'><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.qa.tie.tests.MyAccountPageTest.getContactsTestData() returned a null value
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:148)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:820)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.tie.tests.MyAccountPageTest@2db2cd5</td></tr>
+<tr>
+<td title='com.qa.tie.tests.MyAccountPageTest.verifyContactsPageTitle()'><b>verifyContactsPageTitle</b><br>Test class: com.qa.tie.tests.MyAccountPageTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be &quot;Contacts&quot;. Current title: &quot;TIE Accounting&quot; (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DIPL-5CG706063P&apos;, ip: &apos;192.168.10.104&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Safdar\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62583}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 17fe06031b243db66e0017f69ecad42d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.tie.util.ElementUtil.waitForTitlePresent(ElementUtil.java:29)
+	at com.qa.tie.page.MyAccountPage.getContactsPageTitle(MyAccountPage.java:42)
+	at com.qa.tie.tests.MyAccountPageTest.verifyContactsPageTitle(MyAccountPageTest.java:47)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1195715420", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1195715420'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be &quot;Contacts&quot;. Current title: &quot;TIE Accounting&quot; (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DIPL-5CG706063P&apos;, ip: &apos;192.168.10.104&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Safdar\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62583}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 17fe06031b243db66e0017f69ecad42d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.tie.util.ElementUtil.waitForTitlePresent(ElementUtil.java:29)
+	at com.qa.tie.page.MyAccountPage.getContactsPageTitle(MyAccountPage.java:42)
+	at com.qa.tie.tests.MyAccountPageTest.verifyContactsPageTitle(MyAccountPageTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>20</td>
+<td>com.qa.tie.tests.MyAccountPageTest@2db2cd5</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -78,272 +157,137 @@ function toggleAllBoxes() {
 <td title='com.qa.tie.tests.LoginPageTest.TiELogoTest()'><b>TiELogoTest</b><br>Test class: com.qa.tie.tests.LoginPageTest<br>Test method: Check logo is persent or not?</td>
 <td></td>
 <td>1</td>
-<td>com.qa.tie.tests.LoginPageTest@30c31dd7</td></tr>
-<tr>
-<td title='com.qa.tie.tests.LoginPageTest.TiELogoTest()'><b>TiELogoTest</b><br>Test class: com.qa.tie.tests.LoginPageTest<br>Test method: Check logo is persent or not?</td>
-<td></td>
-<td>0</td>
-<td>com.qa.tie.tests.LoginPageTest@4a9419d7</td></tr>
-<tr>
-<td title='com.qa.tie.tests.LoginPageTest.VerifyregisterWithAccountantUserTest()'><b>VerifyregisterWithAccountantUserTest</b><br>Test class: com.qa.tie.tests.LoginPageTest<br>Test method: User should be able to Register with Accountant User....</td>
-<td></td>
-<td>8</td>
-<td>com.qa.tie.tests.LoginPageTest@30c31dd7</td></tr>
+<td>com.qa.tie.tests.LoginPageTest@241a53ef</td></tr>
 <tr>
 <td title='com.qa.tie.tests.LoginPageTest.VerifyregisterWithAccountantUserTest()'><b>VerifyregisterWithAccountantUserTest</b><br>Test class: com.qa.tie.tests.LoginPageTest<br>Test method: User should be able to Register with Accountant User....</td>
 <td></td>
 <td>7</td>
-<td>com.qa.tie.tests.LoginPageTest@4a9419d7</td></tr>
+<td>com.qa.tie.tests.LoginPageTest@241a53ef</td></tr>
 <tr>
 <td title='com.qa.tie.tests.LoginPageTest.VerifyregisterWithBusinessAccountTest()'><b>VerifyregisterWithBusinessAccountTest</b><br>Test class: com.qa.tie.tests.LoginPageTest<br>Test method: User should be able to Register with Business Account....</td>
-<td></td>
-<td>13</td>
-<td>com.qa.tie.tests.LoginPageTest@30c31dd7</td></tr>
-<tr>
-<td title='com.qa.tie.tests.LoginPageTest.VerifyregisterWithBusinessAccountTest()'><b>VerifyregisterWithBusinessAccountTest</b><br>Test class: com.qa.tie.tests.LoginPageTest<br>Test method: User should be able to Register with Business Account....</td>
-<td></td>
-<td>7</td>
-<td>com.qa.tie.tests.LoginPageTest@4a9419d7</td></tr>
-<tr>
-<td title='com.qa.tie.tests.LoginPageTest.VerifyregisterWithOwnerAssistantTest()'><b>VerifyregisterWithOwnerAssistantTest</b><br>Test class: com.qa.tie.tests.LoginPageTest<br>Test method: User should be able to Register with Owner Assistant....</td>
 <td></td>
 <td>8</td>
-<td>com.qa.tie.tests.LoginPageTest@30c31dd7</td></tr>
+<td>com.qa.tie.tests.LoginPageTest@241a53ef</td></tr>
 <tr>
 <td title='com.qa.tie.tests.LoginPageTest.VerifyregisterWithOwnerAssistantTest()'><b>VerifyregisterWithOwnerAssistantTest</b><br>Test class: com.qa.tie.tests.LoginPageTest<br>Test method: User should be able to Register with Owner Assistant....</td>
 <td></td>
 <td>7</td>
-<td>com.qa.tie.tests.LoginPageTest@4a9419d7</td></tr>
+<td>com.qa.tie.tests.LoginPageTest@241a53ef</td></tr>
 <tr>
 <td title='com.qa.tie.tests.LoginPageTest.doPasswordResetTest()'><b>doPasswordResetTest</b><br>Test class: com.qa.tie.tests.LoginPageTest<br>Test method: To check that the forgot password link redirected to the forgot password page.</td>
 <td></td>
-<td>35</td>
-<td>com.qa.tie.tests.LoginPageTest@30c31dd7</td></tr>
-<tr>
-<td title='com.qa.tie.tests.LoginPageTest.doPasswordResetTest()'><b>doPasswordResetTest</b><br>Test class: com.qa.tie.tests.LoginPageTest<br>Test method: To check that the forgot password link redirected to the forgot password page.</td>
-<td></td>
-<td>35</td>
-<td>com.qa.tie.tests.LoginPageTest@4a9419d7</td></tr>
+<td>34</td>
+<td>com.qa.tie.tests.LoginPageTest@241a53ef</td></tr>
 <tr>
 <td title='com.qa.tie.tests.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.qa.tie.tests.LoginPageTest</td>
 <td></td>
 <td>7</td>
-<td>com.qa.tie.tests.LoginPageTest@30c31dd7</td></tr>
-<tr>
-<td title='com.qa.tie.tests.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.qa.tie.tests.LoginPageTest</td>
-<td></td>
-<td>6</td>
-<td>com.qa.tie.tests.LoginPageTest@4a9419d7</td></tr>
+<td>com.qa.tie.tests.LoginPageTest@241a53ef</td></tr>
 <tr>
 <td title='com.qa.tie.tests.HomePageTest.verifyHomePageHeaderTest()'><b>verifyHomePageHeaderTest</b><br>Test class: com.qa.tie.tests.HomePageTest</td>
 <td></td>
 <td>1</td>
-<td>com.qa.tie.tests.HomePageTest@499b2a5c</td></tr>
-<tr>
-<td title='com.qa.tie.tests.HomePageTest.verifyHomePageHeaderTest()'><b>verifyHomePageHeaderTest</b><br>Test class: com.qa.tie.tests.HomePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.tie.tests.HomePageTest@2f3c6ac4</td></tr>
+<td>com.qa.tie.tests.HomePageTest@344344fa</td></tr>
 <tr>
 <td title='com.qa.tie.tests.HomePageTest.verifyHomePageTitleTest()'><b>verifyHomePageTitleTest</b><br>Test class: com.qa.tie.tests.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.tie.tests.HomePageTest@499b2a5c</td></tr>
-<tr>
-<td title='com.qa.tie.tests.HomePageTest.verifyHomePageTitleTest()'><b>verifyHomePageTitleTest</b><br>Test class: com.qa.tie.tests.HomePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.tie.tests.HomePageTest@2f3c6ac4</td></tr>
+<td>com.qa.tie.tests.HomePageTest@344344fa</td></tr>
 <tr>
 <td title='com.qa.tie.tests.HomePageTest.verifyLoggedInUserTest()'><b>verifyLoggedInUserTest</b><br>Test class: com.qa.tie.tests.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.tie.tests.HomePageTest@499b2a5c</td></tr>
-<tr>
-<td title='com.qa.tie.tests.HomePageTest.verifyLoggedInUserTest()'><b>verifyLoggedInUserTest</b><br>Test class: com.qa.tie.tests.HomePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.tie.tests.HomePageTest@2f3c6ac4</td></tr>
+<td>com.qa.tie.tests.HomePageTest@344344fa</td></tr>
 <tr>
 <td title='com.qa.tie.tests.LoginPageTest.verifyLoginPageTitleTest()'><b>verifyLoginPageTitleTest</b><br>Test class: com.qa.tie.tests.LoginPageTest<br>Test method: verify login page title test.....!!!</td>
 <td></td>
 <td>0</td>
-<td>com.qa.tie.tests.LoginPageTest@30c31dd7</td></tr>
-<tr>
-<td title='com.qa.tie.tests.LoginPageTest.verifyLoginPageTitleTest()'><b>verifyLoginPageTitleTest</b><br>Test class: com.qa.tie.tests.LoginPageTest<br>Test method: verify login page title test.....!!!</td>
-<td></td>
-<td>0</td>
-<td>com.qa.tie.tests.LoginPageTest@4a9419d7</td></tr>
+<td>com.qa.tie.tests.LoginPageTest@241a53ef</td></tr>
 <tr>
 <td title='com.qa.tie.tests.HomePageTest.verifyPayBillsTabTest()'><b>verifyPayBillsTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Pay Bills Button Test...</td>
 <td></td>
 <td>0</td>
-<td>com.qa.tie.tests.HomePageTest@499b2a5c</td></tr>
-<tr>
-<td title='com.qa.tie.tests.HomePageTest.verifyPayBillsTabTest()'><b>verifyPayBillsTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Pay Bills Button Test...</td>
-<td></td>
-<td>0</td>
-<td>com.qa.tie.tests.HomePageTest@2f3c6ac4</td></tr>
+<td>com.qa.tie.tests.HomePageTest@344344fa</td></tr>
 <tr>
 <td title='com.qa.tie.tests.LoginPageTest.verifyPrivacyPolicyLinkTest()'><b>verifyPrivacyPolicyLinkTest</b><br>Test class: com.qa.tie.tests.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.tie.tests.LoginPageTest@30c31dd7</td></tr>
-<tr>
-<td title='com.qa.tie.tests.LoginPageTest.verifyPrivacyPolicyLinkTest()'><b>verifyPrivacyPolicyLinkTest</b><br>Test class: com.qa.tie.tests.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.tie.tests.LoginPageTest@4a9419d7</td></tr>
+<td>com.qa.tie.tests.LoginPageTest@241a53ef</td></tr>
 <tr>
 <td title='com.qa.tie.tests.LoginPageTest.verifyResetPassLinkTest()'><b>verifyResetPassLinkTest</b><br>Test class: com.qa.tie.tests.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.tie.tests.LoginPageTest@30c31dd7</td></tr>
-<tr>
-<td title='com.qa.tie.tests.LoginPageTest.verifyResetPassLinkTest()'><b>verifyResetPassLinkTest</b><br>Test class: com.qa.tie.tests.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.tie.tests.LoginPageTest@4a9419d7</td></tr>
+<td>com.qa.tie.tests.LoginPageTest@241a53ef</td></tr>
 <tr>
 <td title='com.qa.tie.tests.HomePageTest.verifySalesParentTabTest()'><b>verifySalesParentTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify Sales Menu....</td>
 <td></td>
 <td>0</td>
-<td>com.qa.tie.tests.HomePageTest@499b2a5c</td></tr>
-<tr>
-<td title='com.qa.tie.tests.HomePageTest.verifySalesParentTabTest()'><b>verifySalesParentTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify Sales Menu....</td>
-<td></td>
-<td>0</td>
-<td>com.qa.tie.tests.HomePageTest@2f3c6ac4</td></tr>
+<td>com.qa.tie.tests.HomePageTest@344344fa</td></tr>
 <tr>
 <td title='com.qa.tie.tests.HomePageTest.verifySalesTabTest()'><b>verifySalesTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: verifying Sales Tab is Dispaying</td>
 <td></td>
 <td>0</td>
-<td>com.qa.tie.tests.HomePageTest@499b2a5c</td></tr>
-<tr>
-<td title='com.qa.tie.tests.HomePageTest.verifySalesTabTest()'><b>verifySalesTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: verifying Sales Tab is Dispaying</td>
-<td></td>
-<td>0</td>
-<td>com.qa.tie.tests.HomePageTest@2f3c6ac4</td></tr>
+<td>com.qa.tie.tests.HomePageTest@344344fa</td></tr>
 <tr>
 <td title='com.qa.tie.tests.LoginPageTest.verifySignUpLinkTest()'><b>verifySignUpLinkTest</b><br>Test class: com.qa.tie.tests.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.tie.tests.LoginPageTest@30c31dd7</td></tr>
-<tr>
-<td title='com.qa.tie.tests.LoginPageTest.verifySignUpLinkTest()'><b>verifySignUpLinkTest</b><br>Test class: com.qa.tie.tests.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.tie.tests.LoginPageTest@4a9419d7</td></tr>
+<td>com.qa.tie.tests.LoginPageTest@241a53ef</td></tr>
 <tr>
 <td title='com.qa.tie.tests.LoginPageTest.verifyTermsAndConditionLinkTest()'><b>verifyTermsAndConditionLinkTest</b><br>Test class: com.qa.tie.tests.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.tie.tests.LoginPageTest@30c31dd7</td></tr>
-<tr>
-<td title='com.qa.tie.tests.LoginPageTest.verifyTermsAndConditionLinkTest()'><b>verifyTermsAndConditionLinkTest</b><br>Test class: com.qa.tie.tests.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.tie.tests.LoginPageTest@4a9419d7</td></tr>
+<td>com.qa.tie.tests.LoginPageTest@241a53ef</td></tr>
 <tr>
 <td title='com.qa.tie.tests.HomePageTest.veriyBillsMenuTabTest()'><b>veriyBillsMenuTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify Bills Menu under Pay Bills....</td>
-<td></td>
-<td>3</td>
-<td>com.qa.tie.tests.HomePageTest@499b2a5c</td></tr>
-<tr>
-<td title='com.qa.tie.tests.HomePageTest.veriyBillsMenuTabTest()'><b>veriyBillsMenuTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify Bills Menu under Pay Bills....</td>
-<td></td>
-<td>3</td>
-<td>com.qa.tie.tests.HomePageTest@2f3c6ac4</td></tr>
-<tr>
-<td title='com.qa.tie.tests.HomePageTest.veriyCustomerTabTest()'><b>veriyCustomerTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify Customer Menu under Sales....</td>
-<td></td>
-<td>3</td>
-<td>com.qa.tie.tests.HomePageTest@499b2a5c</td></tr>
-<tr>
-<td title='com.qa.tie.tests.HomePageTest.veriyCustomerTabTest()'><b>veriyCustomerTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify Customer Menu under Sales....</td>
-<td></td>
-<td>3</td>
-<td>com.qa.tie.tests.HomePageTest@2f3c6ac4</td></tr>
-<tr>
-<td title='com.qa.tie.tests.HomePageTest.veriyInvoiceMenuTabTest()'><b>veriyInvoiceMenuTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify Invoice Menu under Sales....</td>
 <td></td>
 <td>4</td>
-<td>com.qa.tie.tests.HomePageTest@499b2a5c</td></tr>
+<td>com.qa.tie.tests.HomePageTest@344344fa</td></tr>
+<tr>
+<td title='com.qa.tie.tests.HomePageTest.veriyCustomerTabTest()'><b>veriyCustomerTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify Customer Menu under Sales....</td>
+<td></td>
+<td>2</td>
+<td>com.qa.tie.tests.HomePageTest@344344fa</td></tr>
 <tr>
 <td title='com.qa.tie.tests.HomePageTest.veriyInvoiceMenuTabTest()'><b>veriyInvoiceMenuTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify Invoice Menu under Sales....</td>
 <td></td>
 <td>3</td>
-<td>com.qa.tie.tests.HomePageTest@2f3c6ac4</td></tr>
+<td>com.qa.tie.tests.HomePageTest@344344fa</td></tr>
 <tr>
 <td title='com.qa.tie.tests.HomePageTest.veriyPayBillsOverviewTabTest()'><b>veriyPayBillsOverviewTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify Pay Bills Menu....</td>
-<td></td>
-<td>3</td>
-<td>com.qa.tie.tests.HomePageTest@499b2a5c</td></tr>
-<tr>
-<td title='com.qa.tie.tests.HomePageTest.veriyPayBillsOverviewTabTest()'><b>veriyPayBillsOverviewTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify Pay Bills Menu....</td>
-<td></td>
-<td>3</td>
-<td>com.qa.tie.tests.HomePageTest@2f3c6ac4</td></tr>
-<tr>
-<td title='com.qa.tie.tests.HomePageTest.veriyPayBillsReportMenuTabTest()'><b>veriyPayBillsReportMenuTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify reports Menu under Pay Bills....</td>
 <td></td>
 <td>4</td>
-<td>com.qa.tie.tests.HomePageTest@499b2a5c</td></tr>
+<td>com.qa.tie.tests.HomePageTest@344344fa</td></tr>
 <tr>
 <td title='com.qa.tie.tests.HomePageTest.veriyPayBillsReportMenuTabTest()'><b>veriyPayBillsReportMenuTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify reports Menu under Pay Bills....</td>
 <td></td>
-<td>3</td>
-<td>com.qa.tie.tests.HomePageTest@2f3c6ac4</td></tr>
+<td>2</td>
+<td>com.qa.tie.tests.HomePageTest@344344fa</td></tr>
 <tr>
 <td title='com.qa.tie.tests.HomePageTest.veriyPayBillsTransactionMenuTabTest()'><b>veriyPayBillsTransactionMenuTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify transaction Menu under Pay Bills....</td>
 <td></td>
 <td>4</td>
-<td>com.qa.tie.tests.HomePageTest@499b2a5c</td></tr>
-<tr>
-<td title='com.qa.tie.tests.HomePageTest.veriyPayBillsTransactionMenuTabTest()'><b>veriyPayBillsTransactionMenuTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify transaction Menu under Pay Bills....</td>
-<td></td>
-<td>3</td>
-<td>com.qa.tie.tests.HomePageTest@2f3c6ac4</td></tr>
+<td>com.qa.tie.tests.HomePageTest@344344fa</td></tr>
 <tr>
 <td title='com.qa.tie.tests.HomePageTest.veriySalesOverviewTabTest()'><b>veriySalesOverviewTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify Overview Menu under Sales....</td>
 <td></td>
-<td>4</td>
-<td>com.qa.tie.tests.HomePageTest@499b2a5c</td></tr>
-<tr>
-<td title='com.qa.tie.tests.HomePageTest.veriySalesOverviewTabTest()'><b>veriySalesOverviewTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify Overview Menu under Sales....</td>
-<td></td>
-<td>3</td>
-<td>com.qa.tie.tests.HomePageTest@2f3c6ac4</td></tr>
-<tr>
-<td title='com.qa.tie.tests.HomePageTest.veriySalesReportTabTest()'><b>veriySalesReportTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify Reports Menu under Sales....</td>
-<td></td>
-<td>4</td>
-<td>com.qa.tie.tests.HomePageTest@499b2a5c</td></tr>
+<td>2</td>
+<td>com.qa.tie.tests.HomePageTest@344344fa</td></tr>
 <tr>
 <td title='com.qa.tie.tests.HomePageTest.veriySalesReportTabTest()'><b>veriySalesReportTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify Reports Menu under Sales....</td>
 <td></td>
 <td>3</td>
-<td>com.qa.tie.tests.HomePageTest@2f3c6ac4</td></tr>
+<td>com.qa.tie.tests.HomePageTest@344344fa</td></tr>
 <tr>
 <td title='com.qa.tie.tests.HomePageTest.veriySalesTransactiomTabTest()'><b>veriySalesTransactiomTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify Transaction Menu under Sales....</td>
 <td></td>
 <td>3</td>
-<td>com.qa.tie.tests.HomePageTest@499b2a5c</td></tr>
-<tr>
-<td title='com.qa.tie.tests.HomePageTest.veriySalesTransactiomTabTest()'><b>veriySalesTransactiomTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify Transaction Menu under Sales....</td>
-<td></td>
-<td>3</td>
-<td>com.qa.tie.tests.HomePageTest@2f3c6ac4</td></tr>
-<tr>
-<td title='com.qa.tie.tests.HomePageTest.veriyVendorMenuTabTest()'><b>veriyVendorMenuTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify Vendor Menu under Pay Bills....</td>
-<td></td>
-<td>3</td>
-<td>com.qa.tie.tests.HomePageTest@499b2a5c</td></tr>
+<td>com.qa.tie.tests.HomePageTest@344344fa</td></tr>
 <tr>
 <td title='com.qa.tie.tests.HomePageTest.veriyVendorMenuTabTest()'><b>veriyVendorMenuTabTest</b><br>Test class: com.qa.tie.tests.HomePageTest<br>Test method: Verify Vendor Menu under Pay Bills....</td>
 <td></td>
 <td>4</td>
-<td>com.qa.tie.tests.HomePageTest@2f3c6ac4</td></tr>
+<td>com.qa.tie.tests.HomePageTest@344344fa</td></tr>
 </table><p>
 </body>
 </html>

@@ -30,6 +30,8 @@ public class HomePage extends BasePage {
 	By SalesTransactiom = By.id("salesTransId");
 	By SalesReport = By.id("salesTabReportsId");
 	By PayBillsButton = By.xpath("//div[@class='nav-dropdown']/div[contains(.,'TRANSACTIONS')]");
+	By MyAccount= By.xpath("//span[contains(.,'MY ACCOUNT')]");
+	By AddCompany =By.xpath("//span[contains(.,'Add Company')]");
 
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
@@ -65,63 +67,73 @@ public class HomePage extends BasePage {
 	
 	public void veriyPayBillsOverviewTab() throws Exception{
 		elementUtil.doClick(PayBillsMenu);
-		Thread.sleep(2000);
+		Thread.sleep(500);
 		elementUtil.doClick(PayBillsOverview);
+		Thread.sleep(2000);
 	}
 	
 	public void veriyBillsMenuTab() throws Exception{
 		elementUtil.doClick(PayBillsMenu);
-		Thread.sleep(2000);
+		Thread.sleep(500);
 		elementUtil.doClick(BillsMenu);
+		Thread.sleep(2000);
 	}
 
 	public void veriyVendorMenuTab() throws Exception{
 		elementUtil.doClick(PayBillsMenu);
-		Thread.sleep(2000);
+		Thread.sleep(500);
 		elementUtil.doClick(VendorMenu);
+		Thread.sleep(2000);
 	}
 	public void veriyPayBillsTransactionMenuTab() throws Exception{
 		elementUtil.doClick(PayBillsMenu);
-		Thread.sleep(2000);
+		Thread.sleep(500);
 		elementUtil.doClick(PayBillsTransactionMenu);
+		Thread.sleep(2000);
 	}
 	public void veriyPayBillsReportMenuTab() throws Exception{
 		elementUtil.doClick(PayBillsMenu);
-		Thread.sleep(2000);
+		Thread.sleep(500);
 		elementUtil.doClick(PayBillsReport);
+		Thread.sleep(500);
 	}
 	
 	public void veriySalesOverviewTab() throws Exception{
 		elementUtil.doClick(SalesMenu);
-		Thread.sleep(2000);
+		Thread.sleep(500);
 		elementUtil.doClick(SalesOverview);
+		Thread.sleep(500);
 	}
 	
 	
 	public void veriyCustomerTab() throws Exception{
 		elementUtil.doClick(SalesMenu);
-		Thread.sleep(2000);
+		Thread.sleep(500);
 		elementUtil.doClick(Customer);
+		Thread.sleep(500);
 	}
 	
 	
 	public void verifyInvoiceMenu() throws Exception{
 		elementUtil.doClick(SalesMenu);
-		Thread.sleep(2000);
+		Thread.sleep(500);
 		elementUtil.doClick(InvoiceMenu);
+		Thread.sleep(2000);
 	}
 	
 	public void veriySalesTransactiomTab() throws Exception{
 		elementUtil.doClick(SalesMenu);
-		Thread.sleep(2000);
+		Thread.sleep(500);
 		elementUtil.doClick(SalesTransactiom);
+		Thread.sleep(2000);
 	}
 	
 	
 	public void veriySalesReportTab() throws Exception{
 		elementUtil.doClick(SalesMenu);
-		Thread.sleep(2000);
+		Thread.sleep(500);
 		elementUtil.doClick(SalesReport);
+		Thread.sleep(2000);
 	}
 	
 	
@@ -134,9 +146,17 @@ public class HomePage extends BasePage {
 		
 	}
 	
-	public InvoicePage goToInvoicePage() {
-		clickOnSalesMenu();
-		return new InvoicePage(driver);
+	public void clickOnMyAccountMenu() {
+		elementUtil.waitForElementPresent(MyAccount);
+		elementUtil.doClick(MyAccount);
+		elementUtil.waitForElementPresent(AddCompany);
+		elementUtil.doClick(AddCompany);
+		
+	}
+	
+	public MyAccountPage goToMyAccountPage() {
+		clickOnMyAccountMenu();
+		return new MyAccountPage(driver);
 	}
 
 }
