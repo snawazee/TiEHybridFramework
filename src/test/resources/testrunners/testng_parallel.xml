@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TiE Regression Suite">
+
+	<listeners>
+		<listener class-name="com.qa.tie.listeners.ExtentReportListener" />
+	</listeners>
+
+	<test name="TiE Functional Regression Test - FF"
+		thread-count="3" parallel="classes">
+		<parameter name="browser" value="firefox" />
+
+		<classes>
+			<class name="com.qa.tie.tests.LoginPageTest" />
+ 			<!-- class name="com.qa.tie.tests.HomePageTest" /> -->
+
+		</classes>
+	</test>
+
+	<test name="TiE Functional Regression Test - chrome"
+		thread-count="3" parallel="classes">
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+			<class name="com.qa.tie.tests.LoginPageTest" />
+			<!-- class name="com.qa.tie.tests.HomePageTest" /> -->
+			<!-- class name="com.qa.tie.tests.ContactsPageTest" /> -->
+		</classes>
+	 </test>
+
+
+
+
+</suite> 

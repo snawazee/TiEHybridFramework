@@ -3,23 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tie.Tests.LoginPageTest">
+      <class name="com.qa.hubspot.tests.LoginPageTest">
         <methods>
-          <include name="VerifyTearmAndServiceLinkExistsTest"/>
-          <include name="VerifyregisterWithOwnerAssistantTest"/>
-          <include name="verifyisPrivacyPolicyLinkExistsTest"/>
-          <include name="doPasswordResetTest"/>
-          <include name="TiELogoTest"/>
-          <include name="verifyisForgotPasswordExistsTest"/>
+          <include name="verifyPrivacyPolicyLinkTest"/>
           <include name="verifyLoginPageTitleTest"/>
-          <include name="verifyLoginTest"/>
-          <include name="verifySignUpLinkTest"/>
+          <include name="verifyTermsAndConditionLinkTest"/>
           <include name="setUp"/>
-          <include name="VerifyregisterWithAccountantUserTest"/>
-          <include name="VerifyregisterWithBusinessAccountTest"/>
-          <include name="quitBrowser"/>
+          <include name="verifyResetPassLinkTest"/>
+          <include name="verifySignUpLinkTest"/>
+          <include name="TiELogoTest"/>
+          <include name="tearDown"/>
+          <include name="doPasswordResetTest"/>
+          <include name="loginTest"/>
         </methods>
-      </class> <!-- com.tie.Tests.LoginPageTest -->
+      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

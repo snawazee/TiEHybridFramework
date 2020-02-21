@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="com.tie.Tests.LoginPageTest"/>
-      <class name="com.tie.Tests.DashboardPageTest"/>
-      <!-- class name="com.tie.Tests.InvoicePageTest"/> -->
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+<suite name="TiE Regression Suite" thread-count="2" parallel="tests">
+
+	<listeners>
+<!-- 		<listener class-name="com.qa.tie.listeners.ExtentReportListener" />-->	
+ 			<listener class-name="com.qa.tie.listeners.TestAllureListener" />
+
+	</listeners>
+
+	<test name="TiE Functional Regression Test- FF"
+		thread-count="10" parallel="classes">
+		<parameter name="browser" value="firefox" />
+		
+		<classes>
+			<class name="com.qa.tie.tests.LoginPageTest" />
+		</classes>
+	</test>
+
+		<test name="TiE Functional Regression Test - chrome"
+			thread-count="10" parallel="classes">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.tie.tests.LoginPageTest" />
+		</classes>
+	</test>
+
+
+</suite> 
