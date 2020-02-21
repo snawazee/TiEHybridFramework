@@ -9,7 +9,7 @@ import com.qa.tie.util.JavaScriptUtil;
 
 import io.qameta.allure.Step;
 
-public class ContactsPage extends BasePage {
+public class InvoicePage extends BasePage {
 
 	WebDriver driver;
 	ElementUtil elementUtil;
@@ -23,7 +23,7 @@ public class ContactsPage extends BasePage {
 	By lastName = By.xpath("//input[@data-field='lastname']");
 	By jobTitle = By.xpath("//input[@data-field='jobtitle']");
 
-	public ContactsPage(WebDriver driver) {
+	public InvoicePage(WebDriver driver) {
 		this.driver = driver;
 		elementUtil = new ElementUtil(driver);
 		jsUtil = new JavaScriptUtil(driver);

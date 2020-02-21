@@ -10,7 +10,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.qa.tie.base.BasePage;
-import com.qa.tie.page.ContactsPage;
+import com.qa.tie.page.InvoicePage;
 import com.qa.tie.page.HomePage;
 import com.qa.tie.page.LoginPage;
 import com.qa.tie.util.AppConstants;
@@ -18,14 +18,14 @@ import com.qa.tie.util.Credentials;
 import com.qa.tie.util.ExcelUtil;
 
 
-public class ContactsPageTest {
+public class InvoicePageTest {
 
 	BasePage basePage;
 	Properties prop;
 	WebDriver driver;
 	LoginPage loginPage;
 	HomePage homePage;
-	ContactsPage contactsPage;
+	InvoicePage invoicePage;
 	Credentials userCred;
 
 
@@ -39,12 +39,12 @@ public class ContactsPageTest {
 		loginPage = new LoginPage(driver);
 		userCred = new Credentials(prop.getProperty("username"), prop.getProperty("password"));
 		homePage = loginPage.doLogin(userCred);
-		contactsPage = homePage.goToContactsPage();
+		invoicePage = homePage.goToInvoicePage();
 	}
 
 	@Test(priority = 1)
 	public void verifyContactsPageTitle() {
-		String title = contactsPage.getContactsPageTitle();
+		String title = invoicePage.getContactsPageTitle();
 		System.out.println("contacts page title is: " + title);
 		Assert.assertEquals(title, "Contacts");
 	}
@@ -57,7 +57,7 @@ public class ContactsPageTest {
 
 	@Test(priority = 2, dataProvider = "getContactsTestData")
 	public void createContactsTest(String email, String firstName, String lastName, String jobTitle) {
-		contactsPage.createNewContact(email, firstName, lastName, jobTitle);
+		invoicePage.createNewContact(email, firstName, lastName, jobTitle);
 		
 	}
 
