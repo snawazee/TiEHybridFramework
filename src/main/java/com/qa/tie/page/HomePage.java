@@ -105,11 +105,10 @@ public class HomePage extends BasePage {
 	}
 	
 	
-	public InvoicePage clickOnInvoiceMenu() throws Exception{
+	public void verifyInvoiceMenu() throws Exception{
 		elementUtil.doClick(SalesMenu);
 		Thread.sleep(2000);
 		elementUtil.doClick(InvoiceMenu);
-		return new InvoicePage(driver);
 	}
 	
 	public void veriySalesTransactiomTab() throws Exception{

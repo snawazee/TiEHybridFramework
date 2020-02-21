@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="12" passed="11">
+<testng-results skipped="0" failed="0" ignored="1" total="28" passed="27">
   <reporter-output>
   </reporter-output>
-  <suite name="TiE Regression Suite" duration-ms="117544" started-at="2020-02-21T14:56:47 IST" finished-at="2020-02-21T14:58:44 IST">
+  <suite name="TiE Regression Suite" duration-ms="175177" started-at="2020-02-21T16:20:09 IST" finished-at="2020-02-21T16:23:04 IST">
     <groups>
       <group name="sanity">
-        <method signature="LoginPageTest.verifyPrivacyPolicyLinkTest()[pri:5, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="verifyPrivacyPolicyLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
-        <method signature="LoginPageTest.verifyResetPassLinkTest()[pri:6, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="verifyResetPassLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
-        <method signature="LoginPageTest.verifySignUpLinkTest()[pri:3, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="verifySignUpLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
-        <method signature="LoginPageTest.verifyTermsAndConditionLinkTest()[pri:4, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="verifyTermsAndConditionLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
-        <method signature="LoginPageTest.verifyPrivacyPolicyLinkTest()[pri:5, instance:com.qa.tie.tests.LoginPageTest@596df867]" name="verifyPrivacyPolicyLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
-        <method signature="LoginPageTest.verifyResetPassLinkTest()[pri:6, instance:com.qa.tie.tests.LoginPageTest@596df867]" name="verifyResetPassLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
-        <method signature="LoginPageTest.verifySignUpLinkTest()[pri:3, instance:com.qa.tie.tests.LoginPageTest@596df867]" name="verifySignUpLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
-        <method signature="LoginPageTest.verifyTermsAndConditionLinkTest()[pri:4, instance:com.qa.tie.tests.LoginPageTest@596df867]" name="verifyTermsAndConditionLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
+        <method signature="HomePageTest.verifyHomePageTitleTest()[pri:1, instance:com.qa.tie.tests.HomePageTest@2f3c6ac4]" name="verifyHomePageTitleTest" class="com.qa.tie.tests.HomePageTest"/>
+        <method signature="LoginPageTest.verifyPrivacyPolicyLinkTest()[pri:5, instance:com.qa.tie.tests.LoginPageTest@4a9419d7]" name="verifyPrivacyPolicyLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.verifyResetPassLinkTest()[pri:6, instance:com.qa.tie.tests.LoginPageTest@4a9419d7]" name="verifyResetPassLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.verifySignUpLinkTest()[pri:3, instance:com.qa.tie.tests.LoginPageTest@4a9419d7]" name="verifySignUpLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.verifyTermsAndConditionLinkTest()[pri:4, instance:com.qa.tie.tests.LoginPageTest@4a9419d7]" name="verifyTermsAndConditionLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
+        <method signature="HomePageTest.verifyHomePageTitleTest()[pri:1, instance:com.qa.tie.tests.HomePageTest@499b2a5c]" name="verifyHomePageTitleTest" class="com.qa.tie.tests.HomePageTest"/>
+        <method signature="LoginPageTest.verifyPrivacyPolicyLinkTest()[pri:5, instance:com.qa.tie.tests.LoginPageTest@30c31dd7]" name="verifyPrivacyPolicyLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.verifyResetPassLinkTest()[pri:6, instance:com.qa.tie.tests.LoginPageTest@30c31dd7]" name="verifyResetPassLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.verifySignUpLinkTest()[pri:3, instance:com.qa.tie.tests.LoginPageTest@30c31dd7]" name="verifySignUpLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.verifyTermsAndConditionLinkTest()[pri:4, instance:com.qa.tie.tests.LoginPageTest@30c31dd7]" name="verifyTermsAndConditionLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
       </group> <!-- sanity -->
     </groups>
-    <test name="TiE Functional Regression Test- FF" duration-ms="117544" started-at="2020-02-21T14:56:47 IST" finished-at="2020-02-21T14:58:44 IST">
+    <test name="TiE Functional Regression Test- FF" duration-ms="175177" started-at="2020-02-21T16:20:09 IST" finished-at="2020-02-21T16:23:04 IST">
       <class name="com.qa.tie.tests.LoginPageTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="setUp" is-config="true" duration-ms="49467" started-at="2020-02-21T14:56:47 IST" finished-at="2020-02-21T14:57:37 IST">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.tie.tests.LoginPageTest@4a9419d7]" name="setUp" is-config="true" duration-ms="41305" started-at="2020-02-21T16:21:10 IST" finished-at="2020-02-21T16:21:51 IST">
           <params>
             <param index="0">
               <value>
@@ -28,55 +30,136 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="verifyLoginPageTitleTest" duration-ms="48" started-at="2020-02-21T14:57:37 IST" description="verify login page title test.....!!!" finished-at="2020-02-21T14:57:37 IST">
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.tie.tests.LoginPageTest@4a9419d7]" name="verifyLoginPageTitleTest" duration-ms="55" started-at="2020-02-21T16:21:51 IST" description="verify login page title test.....!!!" finished-at="2020-02-21T16:21:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method status="PASS" signature="TiELogoTest()[pri:2, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="TiELogoTest" duration-ms="779" started-at="2020-02-21T14:57:37 IST" description="Check logo is persent or not?" finished-at="2020-02-21T14:57:38 IST">
+        <test-method status="PASS" signature="TiELogoTest()[pri:2, instance:com.qa.tie.tests.LoginPageTest@4a9419d7]" name="TiELogoTest" duration-ms="920" started-at="2020-02-21T16:21:51 IST" description="Check logo is persent or not?" finished-at="2020-02-21T16:21:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TiELogoTest -->
-        <test-method status="PASS" signature="verifySignUpLinkTest()[pri:3, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="verifySignUpLinkTest" duration-ms="807" started-at="2020-02-21T14:57:38 IST" finished-at="2020-02-21T14:57:38 IST">
+        <test-method status="PASS" signature="verifySignUpLinkTest()[pri:3, instance:com.qa.tie.tests.LoginPageTest@4a9419d7]" name="verifySignUpLinkTest" duration-ms="864" started-at="2020-02-21T16:21:52 IST" finished-at="2020-02-21T16:21:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignUpLinkTest -->
-        <test-method status="PASS" signature="verifyTermsAndConditionLinkTest()[pri:4, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="verifyTermsAndConditionLinkTest" duration-ms="782" started-at="2020-02-21T14:57:38 IST" finished-at="2020-02-21T14:57:39 IST">
+        <test-method status="PASS" signature="verifyTermsAndConditionLinkTest()[pri:4, instance:com.qa.tie.tests.LoginPageTest@4a9419d7]" name="verifyTermsAndConditionLinkTest" duration-ms="808" started-at="2020-02-21T16:21:53 IST" finished-at="2020-02-21T16:21:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTermsAndConditionLinkTest -->
-        <test-method status="PASS" signature="verifyPrivacyPolicyLinkTest()[pri:5, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="verifyPrivacyPolicyLinkTest" duration-ms="814" started-at="2020-02-21T14:57:39 IST" finished-at="2020-02-21T14:57:40 IST">
+        <test-method status="PASS" signature="verifyPrivacyPolicyLinkTest()[pri:5, instance:com.qa.tie.tests.LoginPageTest@4a9419d7]" name="verifyPrivacyPolicyLinkTest" duration-ms="946" started-at="2020-02-21T16:21:54 IST" finished-at="2020-02-21T16:21:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPrivacyPolicyLinkTest -->
-        <test-method status="PASS" signature="verifyResetPassLinkTest()[pri:6, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="verifyResetPassLinkTest" duration-ms="738" started-at="2020-02-21T14:57:40 IST" finished-at="2020-02-21T14:57:41 IST">
+        <test-method status="PASS" signature="verifyResetPassLinkTest()[pri:6, instance:com.qa.tie.tests.LoginPageTest@4a9419d7]" name="verifyResetPassLinkTest" duration-ms="937" started-at="2020-02-21T16:21:55 IST" finished-at="2020-02-21T16:21:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyResetPassLinkTest -->
-        <test-method status="PASS" signature="VerifyregisterWithBusinessAccountTest()[pri:7, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="VerifyregisterWithBusinessAccountTest" duration-ms="6726" started-at="2020-02-21T14:57:41 IST" description="User should be able to Register with Business Account...." finished-at="2020-02-21T14:57:48 IST">
+        <test-method status="PASS" signature="VerifyregisterWithBusinessAccountTest()[pri:7, instance:com.qa.tie.tests.LoginPageTest@4a9419d7]" name="VerifyregisterWithBusinessAccountTest" duration-ms="7377" started-at="2020-02-21T16:21:56 IST" description="User should be able to Register with Business Account...." finished-at="2020-02-21T16:22:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyregisterWithBusinessAccountTest -->
-        <test-method status="PASS" signature="VerifyregisterWithAccountantUserTest()[pri:8, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="VerifyregisterWithAccountantUserTest" duration-ms="6471" started-at="2020-02-21T14:57:48 IST" description="User should be able to Register with Accountant User...." finished-at="2020-02-21T14:57:54 IST">
+        <test-method status="PASS" signature="VerifyregisterWithAccountantUserTest()[pri:8, instance:com.qa.tie.tests.LoginPageTest@4a9419d7]" name="VerifyregisterWithAccountantUserTest" duration-ms="7397" started-at="2020-02-21T16:22:03 IST" description="User should be able to Register with Accountant User...." finished-at="2020-02-21T16:22:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyregisterWithAccountantUserTest -->
-        <test-method status="PASS" signature="VerifyregisterWithOwnerAssistantTest()[pri:9, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="VerifyregisterWithOwnerAssistantTest" duration-ms="6487" started-at="2020-02-21T14:57:54 IST" description="User should be able to Register with Owner Assistant...." finished-at="2020-02-21T14:58:01 IST">
+        <test-method status="PASS" signature="VerifyregisterWithOwnerAssistantTest()[pri:9, instance:com.qa.tie.tests.LoginPageTest@4a9419d7]" name="VerifyregisterWithOwnerAssistantTest" duration-ms="7245" started-at="2020-02-21T16:22:11 IST" description="User should be able to Register with Owner Assistant...." finished-at="2020-02-21T16:22:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyregisterWithOwnerAssistantTest -->
-        <test-method status="PASS" signature="doPasswordResetTest()[pri:11, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="doPasswordResetTest" duration-ms="34783" started-at="2020-02-21T14:58:01 IST" description="To check that the forgot password link redirected to the forgot password page." finished-at="2020-02-21T14:58:35 IST">
+        <test-method status="PASS" signature="doPasswordResetTest()[pri:11, instance:com.qa.tie.tests.LoginPageTest@4a9419d7]" name="doPasswordResetTest" duration-ms="35190" started-at="2020-02-21T16:22:18 IST" description="To check that the forgot password link redirected to the forgot password page." finished-at="2020-02-21T16:22:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doPasswordResetTest -->
-        <test-method status="PASS" signature="loginTest()[pri:12, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="loginTest" duration-ms="6794" started-at="2020-02-21T14:58:35 IST" finished-at="2020-02-21T14:58:42 IST">
+        <test-method status="PASS" signature="loginTest()[pri:12, instance:com.qa.tie.tests.LoginPageTest@4a9419d7]" name="loginTest" duration-ms="6511" started-at="2020-02-21T16:22:53 IST" finished-at="2020-02-21T16:23:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="tearDown" is-config="true" duration-ms="2045" started-at="2020-02-21T14:58:42 IST" finished-at="2020-02-21T14:58:44 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tie.tests.LoginPageTest@4a9419d7]" name="tearDown" is-config="true" duration-ms="2146" started-at="2020-02-21T16:23:02 IST" finished-at="2020-02-21T16:23:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.tie.tests.LoginPageTest -->
+      <class name="com.qa.tie.tests.HomePageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.tie.tests.HomePageTest@2f3c6ac4]" name="setUp" is-config="true" duration-ms="60826" started-at="2020-02-21T16:20:09 IST" finished-at="2020-02-21T16:21:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:com.qa.tie.tests.HomePageTest@2f3c6ac4]" name="verifyHomePageTitleTest" duration-ms="46" started-at="2020-02-21T16:21:51 IST" finished-at="2020-02-21T16:21:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method status="PASS" signature="verifyHomePageHeaderTest()[pri:2, instance:com.qa.tie.tests.HomePageTest@2f3c6ac4]" name="verifyHomePageHeaderTest" duration-ms="819" started-at="2020-02-21T16:21:51 IST" finished-at="2020-02-21T16:21:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageHeaderTest -->
+        <test-method status="PASS" signature="verifyLoggedInUserTest()[pri:3, instance:com.qa.tie.tests.HomePageTest@2f3c6ac4]" name="verifyLoggedInUserTest" duration-ms="669" started-at="2020-02-21T16:21:52 IST" finished-at="2020-02-21T16:21:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoggedInUserTest -->
+        <test-method status="PASS" signature="verifySalesTabTest()[pri:4, instance:com.qa.tie.tests.HomePageTest@2f3c6ac4]" name="verifySalesTabTest" duration-ms="693" started-at="2020-02-21T16:21:53 IST" description="verifying Sales Tab is Dispaying" finished-at="2020-02-21T16:21:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySalesTabTest -->
+        <test-method status="PASS" signature="verifyPayBillsTabTest()[pri:5, instance:com.qa.tie.tests.HomePageTest@2f3c6ac4]" name="verifyPayBillsTabTest" duration-ms="785" started-at="2020-02-21T16:21:54 IST" description="Pay Bills Button Test..." finished-at="2020-02-21T16:21:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPayBillsTabTest -->
+        <test-method status="PASS" signature="verifySalesParentTabTest()[pri:6, instance:com.qa.tie.tests.HomePageTest@2f3c6ac4]" name="verifySalesParentTabTest" duration-ms="760" started-at="2020-02-21T16:21:55 IST" description="Verify Sales Menu...." finished-at="2020-02-21T16:21:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySalesParentTabTest -->
+        <test-method status="PASS" signature="veriyPayBillsOverviewTabTest()[pri:7, instance:com.qa.tie.tests.HomePageTest@2f3c6ac4]" name="veriyPayBillsOverviewTabTest" duration-ms="3866" started-at="2020-02-21T16:21:55 IST" description="Verify Pay Bills Menu...." finished-at="2020-02-21T16:21:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriyPayBillsOverviewTabTest -->
+        <test-method status="PASS" signature="veriyBillsMenuTabTest()[pri:8, instance:com.qa.tie.tests.HomePageTest@2f3c6ac4]" name="veriyBillsMenuTabTest" duration-ms="3962" started-at="2020-02-21T16:21:59 IST" description="Verify Bills Menu under Pay Bills...." finished-at="2020-02-21T16:22:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriyBillsMenuTabTest -->
+        <test-method status="PASS" signature="veriyVendorMenuTabTest()[pri:9, instance:com.qa.tie.tests.HomePageTest@2f3c6ac4]" name="veriyVendorMenuTabTest" duration-ms="4059" started-at="2020-02-21T16:22:03 IST" description="Verify Vendor Menu under Pay Bills...." finished-at="2020-02-21T16:22:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriyVendorMenuTabTest -->
+        <test-method status="PASS" signature="veriyPayBillsTransactionMenuTabTest()[pri:10, instance:com.qa.tie.tests.HomePageTest@2f3c6ac4]" name="veriyPayBillsTransactionMenuTabTest" duration-ms="3964" started-at="2020-02-21T16:22:07 IST" description="Verify transaction Menu under Pay Bills...." finished-at="2020-02-21T16:22:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriyPayBillsTransactionMenuTabTest -->
+        <test-method status="PASS" signature="veriyPayBillsReportMenuTabTest()[pri:11, instance:com.qa.tie.tests.HomePageTest@2f3c6ac4]" name="veriyPayBillsReportMenuTabTest" duration-ms="3906" started-at="2020-02-21T16:22:11 IST" description="Verify reports Menu under Pay Bills...." finished-at="2020-02-21T16:22:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriyPayBillsReportMenuTabTest -->
+        <test-method status="PASS" signature="veriySalesOverviewTabTest()[pri:12, instance:com.qa.tie.tests.HomePageTest@2f3c6ac4]" name="veriySalesOverviewTabTest" duration-ms="3850" started-at="2020-02-21T16:22:15 IST" description="Verify Overview Menu under Sales...." finished-at="2020-02-21T16:22:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriySalesOverviewTabTest -->
+        <test-method status="PASS" signature="veriyCustomerTabTest()[pri:13, instance:com.qa.tie.tests.HomePageTest@2f3c6ac4]" name="veriyCustomerTabTest" duration-ms="3620" started-at="2020-02-21T16:22:19 IST" description="Verify Customer Menu under Sales...." finished-at="2020-02-21T16:22:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriyCustomerTabTest -->
+        <test-method status="PASS" signature="veriyInvoiceMenuTabTest()[pri:14, instance:com.qa.tie.tests.HomePageTest@2f3c6ac4]" name="veriyInvoiceMenuTabTest" duration-ms="3660" started-at="2020-02-21T16:22:23 IST" description="Verify Invoice Menu under Sales...." finished-at="2020-02-21T16:22:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriyInvoiceMenuTabTest -->
+        <test-method status="PASS" signature="veriySalesTransactiomTabTest()[pri:15, instance:com.qa.tie.tests.HomePageTest@2f3c6ac4]" name="veriySalesTransactiomTabTest" duration-ms="3736" started-at="2020-02-21T16:22:26 IST" description="Verify Transaction Menu under Sales...." finished-at="2020-02-21T16:22:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriySalesTransactiomTabTest -->
+        <test-method status="PASS" signature="veriySalesReportTabTest()[pri:16, instance:com.qa.tie.tests.HomePageTest@2f3c6ac4]" name="veriySalesReportTabTest" duration-ms="3656" started-at="2020-02-21T16:22:30 IST" description="Verify Reports Menu under Sales...." finished-at="2020-02-21T16:22:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriySalesReportTabTest -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.qa.tie.tests.HomePageTest@2f3c6ac4]" name="quitBrowser" is-config="true" duration-ms="1904" started-at="2020-02-21T16:23:00 IST" finished-at="2020-02-21T16:23:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.qa.tie.tests.HomePageTest -->
     </test> <!-- TiE Functional Regression Test- FF -->
   </suite> <!-- TiE Regression Suite -->
 </testng-results>
