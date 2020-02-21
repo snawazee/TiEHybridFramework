@@ -69,12 +69,12 @@ public class BasePage {
 			env = System.getProperty("env");
 
 			if (env.equals("qa")) {
-				path = "./src/main/java/com/qa/hubspot/config/config.qa.properties";
+				path = "./src/main/java/com/qa/tie/config/config.qa.properties";
 			} else if (env.equals("stg")) {
-				path = "./src/main/java/com/qa/hubspot/config/config.stg.properties";
+				path = "./src/main/java/com/qa/tie/config/config.stg.properties";
 			}
 		} catch (Exception e) {
-			path = "./src/main/java/com/qa/hubspot/config/config.properties";
+			path = "./src/main/java/com/qa/tie/config/config.properties";
 		}
 
 		try {

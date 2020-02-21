@@ -26,4 +26,26 @@
       </class> <!-- com.qa.tie.tests.LoginPageTest -->
     </classes>
   </test> <!-- TiE Functional Regression Test- FF(failed) -->
+  <test thread-count="2" name="TiE Functional Regression Test - chrome(failed)" parallel="classes">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.tie.tests.LoginPageTest">
+        <methods>
+          <include name="verifyTermsAndConditionLinkTest"/>
+          <include name="VerifyregisterWithBusinessAccountTest"/>
+          <include name="verifyPrivacyPolicyLinkTest"/>
+          <include name="VerifyregisterWithOwnerAssistantTest"/>
+          <include name="verifyResetPassLinkTest"/>
+          <include name="TiELogoTest"/>
+          <include name="doPasswordResetTest"/>
+          <include name="loginTest"/>
+          <include name="verifySignUpLinkTest"/>
+          <include name="setUp"/>
+          <include name="verifyLoginPageTitleTest"/>
+          <include name="VerifyregisterWithAccountantUserTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.tie.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- TiE Functional Regression Test - chrome(failed) -->
 </suite> <!-- Failed suite [TiE Regression Suite] -->

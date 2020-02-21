@@ -9,7 +9,7 @@
 	</listeners>
 
 	<test name="TiE Functional Regression Test- FF"
-		thread-count="10" parallel="classes">
+		thread-count="3" parallel="classes">
 		<parameter name="browser" value="firefox" />
 		
 		<classes>
@@ -18,7 +18,7 @@
 	</test>
 
 		<test name="TiE Functional Regression Test - chrome"
-			thread-count="10" parallel="classes">
+			thread-count="3" parallel="classes">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.qa.tie.tests.LoginPageTest" />
