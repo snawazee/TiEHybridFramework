@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="12" passed="11">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TiE Regression Suite" duration-ms="117544" started-at="2020-02-21T14:56:47 IST" finished-at="2020-02-21T14:58:44 IST">
+    <groups>
+      <group name="sanity">
+        <method signature="LoginPageTest.verifyPrivacyPolicyLinkTest()[pri:5, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="verifyPrivacyPolicyLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.verifyResetPassLinkTest()[pri:6, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="verifyResetPassLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.verifySignUpLinkTest()[pri:3, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="verifySignUpLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.verifyTermsAndConditionLinkTest()[pri:4, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="verifyTermsAndConditionLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.verifyPrivacyPolicyLinkTest()[pri:5, instance:com.qa.tie.tests.LoginPageTest@596df867]" name="verifyPrivacyPolicyLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.verifyResetPassLinkTest()[pri:6, instance:com.qa.tie.tests.LoginPageTest@596df867]" name="verifyResetPassLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.verifySignUpLinkTest()[pri:3, instance:com.qa.tie.tests.LoginPageTest@596df867]" name="verifySignUpLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.verifyTermsAndConditionLinkTest()[pri:4, instance:com.qa.tie.tests.LoginPageTest@596df867]" name="verifyTermsAndConditionLinkTest" class="com.qa.tie.tests.LoginPageTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test name="TiE Functional Regression Test- FF" duration-ms="117544" started-at="2020-02-21T14:56:47 IST" finished-at="2020-02-21T14:58:44 IST">
+      <class name="com.qa.tie.tests.LoginPageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="setUp" is-config="true" duration-ms="49467" started-at="2020-02-21T14:56:47 IST" finished-at="2020-02-21T14:57:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="verifyLoginPageTitleTest" duration-ms="48" started-at="2020-02-21T14:57:37 IST" description="verify login page title test.....!!!" finished-at="2020-02-21T14:57:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitleTest -->
+        <test-method status="PASS" signature="TiELogoTest()[pri:2, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="TiELogoTest" duration-ms="779" started-at="2020-02-21T14:57:37 IST" description="Check logo is persent or not?" finished-at="2020-02-21T14:57:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TiELogoTest -->
+        <test-method status="PASS" signature="verifySignUpLinkTest()[pri:3, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="verifySignUpLinkTest" duration-ms="807" started-at="2020-02-21T14:57:38 IST" finished-at="2020-02-21T14:57:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUpLinkTest -->
+        <test-method status="PASS" signature="verifyTermsAndConditionLinkTest()[pri:4, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="verifyTermsAndConditionLinkTest" duration-ms="782" started-at="2020-02-21T14:57:38 IST" finished-at="2020-02-21T14:57:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTermsAndConditionLinkTest -->
+        <test-method status="PASS" signature="verifyPrivacyPolicyLinkTest()[pri:5, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="verifyPrivacyPolicyLinkTest" duration-ms="814" started-at="2020-02-21T14:57:39 IST" finished-at="2020-02-21T14:57:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPrivacyPolicyLinkTest -->
+        <test-method status="PASS" signature="verifyResetPassLinkTest()[pri:6, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="verifyResetPassLinkTest" duration-ms="738" started-at="2020-02-21T14:57:40 IST" finished-at="2020-02-21T14:57:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResetPassLinkTest -->
+        <test-method status="PASS" signature="VerifyregisterWithBusinessAccountTest()[pri:7, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="VerifyregisterWithBusinessAccountTest" duration-ms="6726" started-at="2020-02-21T14:57:41 IST" description="User should be able to Register with Business Account...." finished-at="2020-02-21T14:57:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyregisterWithBusinessAccountTest -->
+        <test-method status="PASS" signature="VerifyregisterWithAccountantUserTest()[pri:8, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="VerifyregisterWithAccountantUserTest" duration-ms="6471" started-at="2020-02-21T14:57:48 IST" description="User should be able to Register with Accountant User...." finished-at="2020-02-21T14:57:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyregisterWithAccountantUserTest -->
+        <test-method status="PASS" signature="VerifyregisterWithOwnerAssistantTest()[pri:9, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="VerifyregisterWithOwnerAssistantTest" duration-ms="6487" started-at="2020-02-21T14:57:54 IST" description="User should be able to Register with Owner Assistant...." finished-at="2020-02-21T14:58:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyregisterWithOwnerAssistantTest -->
+        <test-method status="PASS" signature="doPasswordResetTest()[pri:11, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="doPasswordResetTest" duration-ms="34783" started-at="2020-02-21T14:58:01 IST" description="To check that the forgot password link redirected to the forgot password page." finished-at="2020-02-21T14:58:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doPasswordResetTest -->
+        <test-method status="PASS" signature="loginTest()[pri:12, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="loginTest" duration-ms="6794" started-at="2020-02-21T14:58:35 IST" finished-at="2020-02-21T14:58:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tie.tests.LoginPageTest@67af833b]" name="tearDown" is-config="true" duration-ms="2045" started-at="2020-02-21T14:58:42 IST" finished-at="2020-02-21T14:58:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.tie.tests.LoginPageTest -->
+    </test> <!-- TiE Functional Regression Test- FF -->
+  </suite> <!-- TiE Regression Suite -->
+</testng-results>
