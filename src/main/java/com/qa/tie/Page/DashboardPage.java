@@ -2,7 +2,6 @@ package com.qa.tie.Page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
 import com.qa.tie.Base.BasePage;
 import com.qa.tie.Util.AppConstants;
 import com.qa.tie.Util.ElementUtil;
@@ -193,6 +192,53 @@ public class DashboardPage extends BasePage {
 	public CustomerPage goToCustomerPage() {
 		clickOnCustomerPage();
 		return new CustomerPage(driver);
+	}
+	
+	public void clickOnSalesTrandsationPage() {
+		elementUtil.waitForElementPresent(SalesMenu);
+		elementUtil.doClick(SalesMenu);
+		elementUtil.waitForElementPresent(SalesTransactiom);
+		elementUtil.doClick(SalesTransactiom);
+		
+	}
+
+	public SalesTransactionPage goToSalesTransactionPage() {
+		clickOnSalesTrandsationPage();
+		return new SalesTransactionPage(driver);
+		
+	}
+	
+	public void clickOnSalesReportPage() {
+		elementUtil.waitForElementPresent(SalesMenu);
+		elementUtil.doClick(SalesMenu);
+		elementUtil.waitForElementPresent(SalesReport);
+		elementUtil.doClick(SalesReport);
+		
+	}
+
+	public SalesReportsPage goToSalesReportsPage() {
+		clickOnSalesReportPage();
+		return new SalesReportsPage(driver);
+	}
+
+	public BillsPage goToBillsPage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public PayBillsOverviewPage goToPayBillsOverviewPage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public PayBills_TransactionPage goToPayBillsTransationPage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public VendorPage goToVendorPage() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
 
