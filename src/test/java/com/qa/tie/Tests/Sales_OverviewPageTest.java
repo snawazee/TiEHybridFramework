@@ -9,11 +9,11 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.qa.tie.Base.BasePage;
-import com.qa.tie.Page.CustomerPage;
+import com.qa.tie.Page.Sales_CustomerPage;
 import com.qa.tie.Page.DashboardPage;
-import com.qa.tie.Page.InvoicePage;
+import com.qa.tie.Page.Sales_InvoicePage;
 import com.qa.tie.Page.LoginPage;
-import com.qa.tie.Page.OverviewPage;
+import com.qa.tie.Page.Sales_OverviewPage;
 import com.qa.tie.Util.AppConstants;
 import com.qa.tie.Util.Credentials;
 
@@ -33,9 +33,9 @@ import io.qameta.allure.SeverityLevel;
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
 	Credentials userCred;
-	InvoicePage invoicePage;
-	CustomerPage customerPage;
-	OverviewPage overviewPage;
+	Sales_InvoicePage sales_InvoicePage;
+	Sales_CustomerPage sales_CustomerPage;
+	Sales_OverviewPage sales_OverviewPage;
 
 	@BeforeTest(alwaysRun=true)
 	@Parameters(value={"browser"})
@@ -56,14 +56,14 @@ import io.qameta.allure.SeverityLevel;
 	loginPage = new LoginPage(driver);
 	userCred = new Credentials(prop.getProperty("username"), prop.getProperty("password"));
 	dashboardPage = loginPage.doLogin(userCred);
-	overviewPage = dashboardPage.goToOverviewPage();
+	sales_OverviewPage = dashboardPage.goToOverviewPage();
 	}
 
 	@Test(priority = 1, groups="sanity")
 	@Description("verify Customer  Page Title Test....")
 	@Severity(SeverityLevel.NORMAL)
 	public void verifyHomePageTitleTest() {
-	String title = customerPage.getCustomerPageTitle();
+	String title = sales_CustomerPage.getCustomerPageTitle();
 	System.out.println("home page title is : " + title);
 	Assert.assertEquals(title, AppConstants.OVERVIEW_PAGE_TITLE);
 				

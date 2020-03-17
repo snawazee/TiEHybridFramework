@@ -6,12 +6,12 @@ import com.qa.tie.Util.AppConstants;
 import com.qa.tie.Util.ElementUtil;
 
 
-public class VendorPage extends BasePage {
+public class PayBills_VendorPage extends BasePage {
 	WebDriver driver;
 	ElementUtil elementUtil;
 
 
-	public VendorPage(WebDriver driver) {
+	public PayBills_VendorPage(WebDriver driver) {
 		this.driver = driver;
 		elementUtil = new ElementUtil(driver);
 

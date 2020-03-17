@@ -6,19 +6,19 @@ import com.qa.tie.Util.AppConstants;
 import com.qa.tie.Util.ElementUtil;
 
 
-public class OverviewPage extends BasePage {
+public class PayBills_OverviewPage extends BasePage {
 	WebDriver driver;
 	ElementUtil elementUtil;
 
 
-	public OverviewPage(WebDriver driver) {
+	public PayBills_OverviewPage(WebDriver driver) {
 		this.driver = driver;
 		elementUtil = new ElementUtil(driver);
 
 	}
 
 	public String getCustomerPageTitle() {
-		elementUtil.waitForTitlePresent(AppConstants.CUSTOMER_PAGE_TITLE);
+		elementUtil.waitForTitlePresent(AppConstants.PAYBILLSOVERVIEW_PAGE_TITLE);
 		return elementUtil.doGetPageTitle();
 	}
 }

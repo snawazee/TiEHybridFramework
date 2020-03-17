@@ -9,7 +9,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.qa.tie.Base.BasePage;
 import com.qa.tie.Page.DashboardPage;
-import com.qa.tie.Page.InvoicePage;
+import com.qa.tie.Page.Sales_InvoicePage;
 import com.qa.tie.Page.LoginPage;
 import com.qa.tie.Util.AppConstants;
 import com.qa.tie.Util.Credentials;
@@ -29,7 +29,7 @@ public class Sales_InvoicePageTest {
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
 	Credentials userCred;
-	InvoicePage invoicePage;
+	Sales_InvoicePage sales_InvoicePage;
 
 	@BeforeTest(alwaysRun=true)
 	@Parameters(value={"browser"})
@@ -51,14 +51,14 @@ public class Sales_InvoicePageTest {
 		loginPage = new LoginPage(driver);
 		userCred = new Credentials(prop.getProperty("username"), prop.getProperty("password"));
 		dashboardPage = loginPage.doLogin(userCred);
-		invoicePage = dashboardPage.goToInvoicePage();
+		sales_InvoicePage = dashboardPage.goToInvoicePage();
 	}
 
 		@Test(priority = 1, groups="sanity")
 		@Description("verify Invoice  Page Title Test....")
 		@Severity(SeverityLevel.NORMAL)
 		public void verifyHomePageTitleTest() {
-			String title = invoicePage.getInvoicePageTitle();
+			String title = sales_InvoicePage.getInvoicePageTitle();
 			System.out.println("home page title is : " + title);
 			Assert.assertEquals(title, AppConstants.INVOICE_PAGE_TITLE);
 			
@@ -66,17 +66,17 @@ public class Sales_InvoicePageTest {
 	
 		@Test(priority = 2)
 		public void verifyAllSubMenuClickkableTest() throws Exception{
-			invoicePage.verifyAllSubMenuClickkable();
+			sales_InvoicePage.verifyAllSubMenuClickkable();
 		}
 			
 		@Test(priority = 3)
 		public void FilterInvoiceWithCustomerTest() throws Exception{
-		invoicePage.FilterInvoiceWithCustomer();
+		sales_InvoicePage.FilterInvoiceWithCustomer();
 		}
 			
 		@Test(priority = 4)
 		public void verifyAllHeaderTest() throws Exception{
-		invoicePage.verifyAllHeader();
+		sales_InvoicePage.verifyAllHeader();
 		}
 			
 		@AfterTest

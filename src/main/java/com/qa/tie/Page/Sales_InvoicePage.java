@@ -13,7 +13,7 @@ import com.qa.tie.Util.ElementUtil;
 
 import io.qameta.allure.Step;
 
-	public class InvoicePage extends BasePage {
+	public class Sales_InvoicePage extends BasePage {
 	
 	WebDriver driver;
 	ElementUtil elementUtil;
@@ -45,7 +45,7 @@ import io.qameta.allure.Step;
 	By ItemSaveBtn=By.xpath("//button[@type='submit']");
 	By itemList=By.xpath("//li[contains(.,'Book')]");
 	
-	public InvoicePage(WebDriver driver) {
+	public Sales_InvoicePage(WebDriver driver) {
 		this.driver = driver;
 		elementUtil = new ElementUtil(driver);
 		

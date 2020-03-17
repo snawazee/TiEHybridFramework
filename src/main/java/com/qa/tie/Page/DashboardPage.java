@@ -161,9 +161,9 @@ public class DashboardPage extends BasePage {
 		return new MyAccountPage(driver);
 	}
 	
-	public InvoicePage goToInvoicePage() {
+	public Sales_InvoicePage goToInvoicePage() {
 		clickOnInvoiceMenu();
-		return new InvoicePage(driver);
+		return new Sales_InvoicePage(driver);
 		
 		
 	}
@@ -184,14 +184,14 @@ public class DashboardPage extends BasePage {
 		
 	}
 	
-	public OverviewPage goToOverviewPage() {
+	public Sales_OverviewPage goToOverviewPage() {
 		clickOnOverviewPage();
-		return new OverviewPage(driver);
+		return new Sales_OverviewPage(driver);
 	}
 	
-	public CustomerPage goToCustomerPage() {
+	public Sales_CustomerPage goToCustomerPage() {
 		clickOnCustomerPage();
-		return new CustomerPage(driver);
+		return new Sales_CustomerPage(driver);
 	}
 	
 	public void clickOnSalesTrandsationPage() {
@@ -202,9 +202,9 @@ public class DashboardPage extends BasePage {
 		
 	}
 
-	public SalesTransactionPage goToSalesTransactionPage() {
+	public Sales_TransactionPage goToSalesTransactionPage() {
 		clickOnSalesTrandsationPage();
-		return new SalesTransactionPage(driver);
+		return new Sales_TransactionPage(driver);
 		
 	}
 	
@@ -216,9 +216,9 @@ public class DashboardPage extends BasePage {
 		
 	}
 
-	public SalesReportsPage goToSalesReportsPage() {
+	public Sales_ReportsPage goToSalesReportsPage() {
 		clickOnSalesReportPage();
-		return new SalesReportsPage(driver);
+		return new Sales_ReportsPage(driver);
 	}
 	
 	
@@ -254,14 +254,14 @@ public class DashboardPage extends BasePage {
 		
 	}
 
-	public BillsPage goToBillsPage() {
+	public PayBills_BillsPage goToBillsPage() {
 		clickOnBillsPage();
-		return new BillsPage(driver);
+		return new PayBills_BillsPage(driver);
 	}
 
-	public PayBillsOverviewPage goToPayBillsOverviewPage() {
+	public PayBills_OverviewPage goToPayBillsOverviewPage() {
 		clcikOnPayBillsOverviewPage();
-		return new PayBillsOverviewPage(driver);
+		return new PayBills_OverviewPage(driver);
 	}
 
 	public PayBills_TransactionPage goToPayBillsTransationPage() {
@@ -269,9 +269,9 @@ public class DashboardPage extends BasePage {
 		return new PayBills_TransactionPage(driver);
 	}
 
-	public VendorPage goToVendorPage() {
+	public PayBills_VendorPage goToVendorPage() {
 		clickOnVendorPage();
-		return new VendorPage(driver);
+		return new PayBills_VendorPage(driver);
 	}
 	
 	public void clickOnPayBillsreportsPage() {

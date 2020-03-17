@@ -9,15 +9,15 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.qa.tie.Base.BasePage;
-import com.qa.tie.Page.BillsPage;
-import com.qa.tie.Page.CustomerPage;
+import com.qa.tie.Page.PayBills_BillsPage;
+import com.qa.tie.Page.Sales_CustomerPage;
 import com.qa.tie.Page.DashboardPage;
-import com.qa.tie.Page.InvoicePage;
+import com.qa.tie.Page.Sales_InvoicePage;
 import com.qa.tie.Page.LoginPage;
-import com.qa.tie.Page.PayBillsOverviewPage;
+import com.qa.tie.Page.PayBills_OverviewPage;
 import com.qa.tie.Page.PayBills_ReportsPage;
 import com.qa.tie.Page.PayBills_TransactionPage;
-import com.qa.tie.Page.SalesTransactionPage;
+import com.qa.tie.Page.Sales_TransactionPage;
 import com.qa.tie.Util.AppConstants;
 import com.qa.tie.Util.Credentials;
 
@@ -37,11 +37,11 @@ import io.qameta.allure.SeverityLevel;
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
 	Credentials userCred;
-	InvoicePage invoicePage;
-	CustomerPage customerPage;
-	SalesTransactionPage salesTransationPage;
-	BillsPage billsPage;
-	PayBillsOverviewPage paybillsOverviewPage;
+	Sales_InvoicePage sales_InvoicePage;
+	Sales_CustomerPage sales_CustomerPage;
+	Sales_TransactionPage salesTransationPage;
+	PayBills_BillsPage payBills_BillsPage;
+	PayBills_OverviewPage paybillsOverviewPage;
 	PayBills_TransactionPage paybillsTransationPage;
 	PayBills_ReportsPage paybillsReportsPage;
 	

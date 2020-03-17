@@ -6,19 +6,19 @@ import com.qa.tie.Util.AppConstants;
 import com.qa.tie.Util.ElementUtil;
 
 
-public class SalesTransactionPage extends BasePage {
+public class Sales_ReportsPage extends BasePage {
 	WebDriver driver;
 	ElementUtil elementUtil;
 
 
-	public SalesTransactionPage(WebDriver driver) {
+	public Sales_ReportsPage(WebDriver driver) {
 		this.driver = driver;
 		elementUtil = new ElementUtil(driver);
 
 	}
 
 	public String getCustomerPageTitle() {
-		elementUtil.waitForTitlePresent(AppConstants.SALESTRANSATION_PAGE_TITLE);
+		elementUtil.waitForTitlePresent(AppConstants.SALESREPORTS_PAGE_TITLE);
 		return elementUtil.doGetPageTitle();
 	}
 }
