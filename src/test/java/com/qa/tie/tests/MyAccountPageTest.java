@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.qa.tie.base.BasePage;
-import com.qa.tie.page.HomePage;
+import com.qa.tie.page.DashboardPage;
 import com.qa.tie.page.LoginPage;
 import com.qa.tie.page.MyAccountPage;
 import com.qa.tie.util.AppConstants;
@@ -22,7 +22,7 @@ public class MyAccountPageTest {
 	Properties prop;
 	WebDriver driver;
 	LoginPage loginPage;
-	HomePage homePage;
+	DashboardPage dashboardPage;
 	MyAccountPage myAccountPage;
 	Credentials userCred;
 
@@ -36,8 +36,8 @@ public class MyAccountPageTest {
 		driver.get(prop.getProperty("url"));
 		loginPage = new LoginPage(driver);
 		userCred = new Credentials(prop.getProperty("username"), prop.getProperty("password"));
-		homePage = loginPage.doLogin(userCred);
-		myAccountPage = homePage.goToMyAccountPage();
+		dashboardPage = loginPage.doLogin(userCred);
+		myAccountPage = dashboardPage.goToMyAccountPage();
 	}
 
 

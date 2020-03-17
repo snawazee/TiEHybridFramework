@@ -12,7 +12,7 @@
 		<parameter name="browser" value="firefox" />
 
 		<classes>
-			<class name="com.qa.tie.tests.LoginPageTest" />
+			<!-- class name="com.qa.tie.tests.LoginPageTest" /> -->
  			<!-- class name="com.qa.tie.tests.HomePageTest" /> -->
 
 		</classes>

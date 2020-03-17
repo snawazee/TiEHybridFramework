@@ -11,7 +11,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.qa.tie.base.BasePage;
-import com.qa.tie.page.HomePage;
+import com.qa.tie.page.DashboardPage;
 import com.qa.tie.page.LoginPage;
 import com.qa.tie.util.AppConstants;
 import com.qa.tie.util.Credentials;
@@ -175,8 +175,8 @@ public class LoginPageTest {
 	@Description("verify Login Test....")
 	@Severity(SeverityLevel.BLOCKER)
 	public void loginTest() {
-		HomePage homePage = loginPage.doLogin(userCred);
-		String accountName = homePage.getLoggedInUserAccountName();
+		DashboardPage dashboardPage = loginPage.doLogin(userCred);
+		String accountName = dashboardPage.getLoggedInUserAccountName();
 		Assert.assertEquals(accountName, prop.getProperty("accountname"));
 	}
 	@AfterTest(alwaysRun=false)

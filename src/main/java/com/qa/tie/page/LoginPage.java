@@ -164,12 +164,12 @@ public class LoginPage extends BasePage {
 	}
 	
 	
-	public HomePage doLogin(Credentials userCred) {
+	public DashboardPage doLogin(Credentials userCred) {
 		elementUtil.waitForElementPresent(emailId);
 		elementUtil.doSendKeys(emailId, userCred.getAppUsername());
 		elementUtil.doSendKeys(password, userCred.getAppPassword());
 		elementUtil.doClick(loginButton);
-		return new HomePage(driver);
+		return new DashboardPage(driver);
 	}
 	
 	public boolean checkLoginErrorMesg(){

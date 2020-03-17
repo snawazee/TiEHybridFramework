@@ -10,7 +10,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.qa.tie.base.BasePage;
-import com.qa.tie.page.HomePage;
+import com.qa.tie.page.DashboardPage;
 import com.qa.tie.page.LoginPage;
 import com.qa.tie.util.AppConstants;
 import com.qa.tie.util.Credentials;
@@ -24,13 +24,13 @@ import io.qameta.allure.Story;
 
 @Epic("Epic - 102 : create Home page features")
 @Feature("US - 502 : create test for Home page on TiE")
-public class HomePageTest {
+public class DashboardPageTest {
 
 	WebDriver driver;
 	BasePage basePage;
 	Properties prop;
 	LoginPage loginPage;
-	HomePage homePage;
+	DashboardPage dashboardPage;
 	Credentials userCred;
 
 	@BeforeTest(alwaysRun=true)
@@ -52,14 +52,14 @@ public class HomePageTest {
 		driver.get(prop.getProperty("url"));
 		loginPage = new LoginPage(driver);
 		userCred = new Credentials(prop.getProperty("username"), prop.getProperty("password"));
-		homePage = loginPage.doLogin(userCred);
+		dashboardPage = loginPage.doLogin(userCred);
 	}
 
 	@Test(priority = 1, groups="sanity")
 	@Description("verify Home Page Title Test....")
 	@Severity(SeverityLevel.NORMAL)
 	public void verifyHomePageTitleTest() {
-		String title = homePage.getHomePageTitle();
+		String title = dashboardPage.getHomePageTitle();
 		System.out.println("home page title is : " + title);
 		Assert.assertEquals(title, AppConstants.HOME_PAGE_TITLE);
 	}
@@ -68,7 +68,7 @@ public class HomePageTest {
 	@Description("verify LoginPage Header Test....")
 	@Severity(SeverityLevel.NORMAL)
 	public void verifyHomePageHeaderTest() {
-		String header = homePage.getHomePageHeader();
+		String header = dashboardPage.getHomePageHeader();
 		System.out.println("home page header is : " + header);
 		Assert.assertEquals(header, AppConstants.HOME_PAGE_HEADER);
 	}
@@ -77,7 +77,7 @@ public class HomePageTest {
 	@Description("verify Logged In User Test....")
 	@Severity(SeverityLevel.CRITICAL)
 	public void verifyLoggedInUserTest() {
-		String accountName = homePage.getLoggedInUserAccountName();
+		String accountName = dashboardPage.getLoggedInUserAccountName();
 		System.out.println("logged in account name : " + accountName);
 		Assert.assertEquals(accountName, prop.getProperty("accountname"));
 	}
@@ -87,7 +87,7 @@ public class HomePageTest {
 	@Description("verifying Sales Tab is Dispaying...")	
 	@Story("Story Name:verifying Sales Tab is Dispaying") 
 	public void verifySalesTabTest() {
-		Assert.assertTrue(homePage.verifySalesMenu(), "sales tab is present or not...");
+		Assert.assertTrue(dashboardPage.verifySalesMenu(), "sales tab is present or not...");
 	
 	}
 
@@ -96,7 +96,7 @@ public class HomePageTest {
 	@Description("user should be able to see Pay Bills Button on dashboard....")	
 	@Story("user should be able to see Pay Bills Button on dashboard....") 
 	public void verifyPayBillsTabTest() {
-		Assert.assertTrue(homePage.verifySalesMenu(), "Paybills  tab is present or not...");
+		Assert.assertTrue(dashboardPage.verifySalesMenu(), "Paybills  tab is present or not...");
 	
 	}
 
@@ -106,7 +106,7 @@ public class HomePageTest {
 	@Description("user should be able to see sales menu...")	
 	@Story("user should be able to see sales menu...") 
 	public void verifySalesParentTabTest() throws Exception {
-		homePage.verifySalesMenu();
+		dashboardPage.verifySalesMenu();
 		
 		
 	}
@@ -116,7 +116,7 @@ public class HomePageTest {
 	@Description("user should be able to see and open paybills menu...")	
 	@Story("user should be able to see and open paybills menu...") 
 	public void veriyPayBillsOverviewTabTest() throws Exception {
-		homePage.veriyPayBillsOverviewTab();
+		dashboardPage.veriyPayBillsOverviewTab();
 		
 		
 	}
@@ -126,7 +126,7 @@ public class HomePageTest {
 	@Description("user should be able to see and open bills  menu under Pay Bills...")	
 	@Story("user should be able to see and open bills  menu under Pay Bills...") 
 	public void veriyBillsMenuTabTest() throws Exception {
-		homePage.veriyBillsMenuTab();
+		dashboardPage.veriyBillsMenuTab();
 	
 		
 	}
@@ -136,7 +136,7 @@ public class HomePageTest {
 	@Description("user should be able to see and opne vendor  menu under Pay Bills...")	
 	@Story("user should be able to see and opne vendor  menu under Pay Bills...") 
 	public void veriyVendorMenuTabTest() throws Exception {
-		homePage.veriyVendorMenuTab();
+		dashboardPage.veriyVendorMenuTab();
 		
 		
 	}
@@ -146,7 +146,7 @@ public class HomePageTest {
 	@Description("user should be able to see and opne transaction  menu under Pay Bills...")	
 	@Story("user should be able to see and opne transaction  menu under Pay Bills...") 
 	public void veriyPayBillsTransactionMenuTabTest() throws Exception {
-		homePage.veriyPayBillsTransactionMenuTab();
+		dashboardPage.veriyPayBillsTransactionMenuTab();
 	
 		
 	}
@@ -156,7 +156,7 @@ public class HomePageTest {
 	@Description("user should be able to see and opne reports  menu under Pay Bills...")	
 	@Story("user should be able to see and opne reports  menu under Pay Bills...") 
 	public void veriyPayBillsReportMenuTabTest() throws Exception {
-		homePage.veriyPayBillsReportMenuTab();
+		dashboardPage.veriyPayBillsReportMenuTab();
 		
 		
 	}
@@ -166,7 +166,7 @@ public class HomePageTest {
 	@Description("user should be able to see and opne Overview  menu under Sales...")	
 	@Story("user should be able to see and opne Overview  menu under Sales...") 
 	public void veriySalesOverviewTabTest() throws Exception {
-		homePage.veriySalesOverviewTab();
+		dashboardPage.veriySalesOverviewTab();
 	
 		
 	}
@@ -176,7 +176,7 @@ public class HomePageTest {
 	@Description("user should be able to see and opne Customer  menu under Sales...")	
 	@Story("user should be able to see and opne Customer  menu under Sales...") 
 	public void veriyCustomerTabTest() throws Exception {
-		homePage.veriyCustomerTab();
+		dashboardPage.veriyCustomerTab();
 	
 		
 	}
@@ -186,7 +186,7 @@ public class HomePageTest {
 	@Description("user should be able to see and opne Invoice  menu under Sales...")	
 	@Story("user should be able to see and opne Invoice  menu under Sales...") 
 	public void veriyInvoiceMenuTabTest() throws Exception{
-		homePage.verifyInvoiceMenu();
+		dashboardPage.verifyInvoiceMenu();
 		
 		
 	}
@@ -197,7 +197,7 @@ public class HomePageTest {
 	@Description("user should be able to see and opne Transaction  menu under Sales...")	
 	@Story("user should be able to see and opne Transaction  menu under Sales...") 
 	public void veriySalesTransactiomTabTest() throws Exception {
-		homePage.veriySalesTransactiomTab();
+		dashboardPage.veriySalesTransactiomTab();
 		
 		
 	}
@@ -208,7 +208,7 @@ public class HomePageTest {
 	@Description("user should be able to see and opne Reports  menu under Sales...")	
 	@Story("user should be able to see and opne Reports  menu under Sales...") 
 	public void veriySalesReportTabTest() throws Exception {
-		homePage.veriySalesReportTab();
+		dashboardPage.veriySalesReportTab();
 		
 		
 	}

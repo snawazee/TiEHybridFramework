@@ -6,7 +6,8 @@ import com.qa.tie.base.BasePage;
 import com.qa.tie.util.AppConstants;
 import com.qa.tie.util.ElementUtil;
 
-public class HomePage extends BasePage {
+
+public class DashboardPage extends BasePage {
 	WebDriver driver;
 	ElementUtil elementUtil;
 
@@ -28,8 +29,9 @@ public class HomePage extends BasePage {
 	By PayBillsButton = By.xpath("//div[@class='nav-dropdown']/div[contains(.,'TRANSACTIONS')]");
 	By MyAccount= By.xpath("//span[contains(.,'MY ACCOUNT')]");
 	By AddCompany =By.xpath("//span[contains(.,'Add Company')]");
+	
 
-	public HomePage(WebDriver driver) {
+	public DashboardPage(WebDriver driver) {
 		this.driver = driver;
 		elementUtil = new ElementUtil(driver);
 
@@ -149,5 +151,5 @@ public class HomePage extends BasePage {
 		clickOnMyAccountMenu();
 		return new MyAccountPage(driver);
 	}
-
 }
+
