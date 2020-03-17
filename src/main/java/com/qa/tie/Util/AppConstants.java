@@ -1,4 +1,4 @@
-package com.qa.tie.util;
+package com.qa.tie.Util;
 
 public class AppConstants {
 	

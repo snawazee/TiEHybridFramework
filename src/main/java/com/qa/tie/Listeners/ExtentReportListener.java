@@ -1,4 +1,4 @@
-package com.qa.tie.listeners;
+package com.qa.tie.Listeners;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -18,7 +18,7 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.qa.tie.base.BasePage;
+import com.qa.tie.Base.BasePage;
 
 public class ExtentReportListener extends BasePage implements ITestListener {
 

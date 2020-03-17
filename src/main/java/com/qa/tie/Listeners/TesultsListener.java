@@ -1,4 +1,4 @@
-package com.qa.tie.listeners;
+package com.qa.tie.Listeners;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,7 +12,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import com.qa.tie.base.BasePage;
+import com.qa.tie.Base.BasePage;
 import com.tesults.tesults.Results;
 
 public class TesultsListener extends BasePage implements ITestListener {

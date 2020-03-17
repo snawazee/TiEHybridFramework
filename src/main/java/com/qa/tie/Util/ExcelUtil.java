@@ -1,4 +1,4 @@
-package com.qa.tie.util;
+package com.qa.tie.Util;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

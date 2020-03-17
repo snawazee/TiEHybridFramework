@@ -1,4 +1,4 @@
-package com.qa.tie.util;
+package com.qa.tie.Util;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;

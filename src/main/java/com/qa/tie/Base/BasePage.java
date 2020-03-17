@@ -1,4 +1,4 @@
-package com.qa.tie.base;
+package com.qa.tie.Base;
 
 import java.io.File;
 import java.io.FileInputStream;

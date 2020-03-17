@@ -1,10 +1,11 @@
-package com.qa.tie.page;
+package com.qa.tie.Page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import com.qa.tie.base.BasePage;
-import com.qa.tie.util.AppConstants;
-import com.qa.tie.util.ElementUtil;
+
+import com.qa.tie.Base.BasePage;
+import com.qa.tie.Util.AppConstants;
+import com.qa.tie.Util.ElementUtil;
 
 
 public class DashboardPage extends BasePage {

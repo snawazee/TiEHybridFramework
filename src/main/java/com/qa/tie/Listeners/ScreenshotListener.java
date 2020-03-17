@@ -1,4 +1,4 @@
-package com.qa.tie.listeners;
+package com.qa.tie.Listeners;
 
 import java.io.File;
 import java.io.IOException;
@@ -12,7 +12,7 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.TestListenerAdapter;
 
-import com.qa.tie.base.BasePage;
+import com.qa.tie.Base.BasePage;
 
 public class ScreenshotListener extends TestListenerAdapter {
     @Override

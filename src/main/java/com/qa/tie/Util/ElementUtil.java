@@ -1,4 +1,4 @@
-package com.qa.tie.util;
+package com.qa.tie.Util;
 
 import java.util.Properties;
 
@@ -9,7 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.qa.tie.base.BasePage;
+import com.qa.tie.Base.BasePage;
 
 public class ElementUtil extends BasePage{
 

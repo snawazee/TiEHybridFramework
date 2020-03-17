@@ -1,4 +1,4 @@
-package com.qa.tie.listeners;
+package com.qa.tie.Listeners;
 
 
 import io.qameta.allure.Attachment;
@@ -9,7 +9,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import com.qa.tie.base.BasePage;
+import com.qa.tie.Base.BasePage;
 
 public class TestAllureListener extends BasePage implements ITestListener {
 
