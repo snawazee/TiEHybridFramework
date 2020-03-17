@@ -17,9 +17,10 @@
 	<test name="TiE Functional Regression Test">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.qa.tie.tests.LoginPageTest" />
+			<!-- class name="com.qa.tie.tests.LoginPageTest" /> -->
 			<!-- class name="com.qa.tie.tests.HomePageTest" /> -->
 			<!-- class name="com.qa.tie.tests.ContactsPageTest" /> -->
+			<class name="com.qa.tie.tests.InvoicePageTest"></class>
 			
 
 		</classes>

@@ -47,14 +47,7 @@ public class LoginPage extends BasePage {
 	By savePassword = By.xpath("//button[contains(.,'Save Password')]");
 	By closeBtn = By.xpath("//img[@alt='closeBtn']");
 
-
-
-
-
-	
-
-	
-	
+ 
 //===================================================================================================================	
 
 	public LoginPage(WebDriver driver) {

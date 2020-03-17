@@ -41,24 +41,24 @@ public class MyAccountPage extends BasePage {
 
 	@Step("Create new contact with {0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}")
 	public void createNewCompany(String cName , String mail, String mobile, String add, String CT, String zip, String contact, 
-			String fullAdd ) {
+			String fullAdd ) throws Exception {
 		//Thread.sleep(5000);
-		elementUtil.waitForElementPresent(createContactButton);
-		elementUtil.doClick(createContactButton);
+		//elementUtil.waitForElementPresent(createContactButton);
+		//elementUtil.doClick(createContactButton);
 		elementUtil.waitForElementPresent(companyName);
 		elementUtil.doSendKeys(companyName, cName);
 		elementUtil.doSendKeys(email, mail);
 		elementUtil.doSendKeys(phoneNo, mobile);
-		
+		Thread.sleep(1000);
 		Select merchantType = new Select(driver.findElement(By.xpath("//input[@name='mcc code']")));  
-		merchantType.selectByVisibleText("Veterinary Services");
-		
+		merchantType.selectByIndex(1);
+		Thread.sleep(1000);
 		elementUtil.doSendKeys(address, add);
 		elementUtil.doSendKeys(city, CT);
-		
+		Thread.sleep(1000);
 		Select status = new Select(driver.findElement(By.xpath("//select[@name='state']")));  
-		status.selectByVisibleText("GA");
-		
+		status.selectByIndex(1);
+		Thread.sleep(1000);
 		elementUtil.doSendKeys(zipCode, zip);
 		elementUtil.doSendKeys(contactName, contact);
 		elementUtil.doSendKeys(fullAddress, fullAdd);

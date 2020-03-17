@@ -12,18 +12,14 @@ public class HomePage extends BasePage {
 
 	By header = By.xpath("//div[@class='client-name-section']");
 	By accountName = By.xpath("//div[@class='client-name-section']");
-	
 	By SalesMenu = By.id("salestabId");
 	By PayBillsMenu = By.id("payTabId");
 	By PayBillsBtn=By.xpath("//button[@class='pay-blueBtn']");
-	
 	By PayBillsOverview = By.id("ovrwId");
 	By BillsMenu =By.id("billsId");
 	By VendorMenu =By.id("vendorId");
 	By PayBillsTransactionMenu = By.id("transId");
 	By PayBillsReport = By.id("reportsId");
-	
-	
 	By SalesOverview = By.id("salesTabOvrvwId");
 	By Customer = By.id("custId");
 	By InvoiceMenu = By.id("InvId");
@@ -105,14 +101,12 @@ public class HomePage extends BasePage {
 		Thread.sleep(500);
 	}
 	
-	
 	public void veriyCustomerTab() throws Exception{
 		elementUtil.doClick(SalesMenu);
 		Thread.sleep(500);
 		elementUtil.doClick(Customer);
 		Thread.sleep(500);
 	}
-	
 	
 	public void verifyInvoiceMenu() throws Exception{
 		elementUtil.doClick(SalesMenu);
@@ -128,7 +122,6 @@ public class HomePage extends BasePage {
 		Thread.sleep(2000);
 	}
 	
-	
 	public void veriySalesReportTab() throws Exception{
 		elementUtil.doClick(SalesMenu);
 		Thread.sleep(500);
@@ -136,11 +129,9 @@ public class HomePage extends BasePage {
 		Thread.sleep(2000);
 	}
 	
-	
 	public void clickOnSalesMenu() {
 		elementUtil.waitForElementPresent(SalesMenu);
 		elementUtil.doClick(SalesMenu);
-		
 		elementUtil.waitForElementPresent(InvoiceMenu);
 		elementUtil.doClick(InvoiceMenu);
 		

@@ -48,8 +48,9 @@ public class MyAccountPageTest {
 	}
 
 	@Test(priority = 1, dataProvider = "getCompanyTestData")
-	public void createComapnyTest(String cName , String mail, String mobile, String add, String CT, String zip, String contact, String fullAdd ) {
-		myAccountPage.createNewCompany( cName ,  mail,  mobile,  add,  CT,  zip,  contact, fullAdd );
+	public void createComapnyTest(String companyName , String email, String phoneNo, String address, String city, String zipCode, String contactName, 
+			String fullAddress ) throws Exception {
+		myAccountPage.createNewCompany( companyName ,  email,  phoneNo,  address,  city,  zipCode,  contactName, fullAddress );
 		
 	}
 
