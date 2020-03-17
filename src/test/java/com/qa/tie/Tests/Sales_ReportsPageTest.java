@@ -1,5 +1,6 @@
 package com.qa.tie.Tests;
 
+
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -13,7 +14,8 @@ import com.qa.tie.Page.CustomerPage;
 import com.qa.tie.Page.DashboardPage;
 import com.qa.tie.Page.InvoicePage;
 import com.qa.tie.Page.LoginPage;
-import com.qa.tie.Page.OverviewPage;
+import com.qa.tie.Page.SalesReportsPage;
+import com.qa.tie.Page.SalesTransactionPage;
 import com.qa.tie.Util.AppConstants;
 import com.qa.tie.Util.Credentials;
 
@@ -25,7 +27,7 @@ import io.qameta.allure.SeverityLevel;
 
 	@Epic("Invoice  page features")
 	@Feature("Invoice Page Test")
-	public class OverviewPageTest {
+	public class Sales_ReportsPageTest {
 
 	WebDriver driver;
 	BasePage basePage;
@@ -35,7 +37,8 @@ import io.qameta.allure.SeverityLevel;
 	Credentials userCred;
 	InvoicePage invoicePage;
 	CustomerPage customerPage;
-	OverviewPage overviewPage;
+	SalesTransactionPage salesTransationPage;
+	SalesReportsPage salesReportsPage;
 
 	@BeforeTest(alwaysRun=true)
 	@Parameters(value={"browser"})
@@ -56,16 +59,16 @@ import io.qameta.allure.SeverityLevel;
 	loginPage = new LoginPage(driver);
 	userCred = new Credentials(prop.getProperty("username"), prop.getProperty("password"));
 	dashboardPage = loginPage.doLogin(userCred);
-	overviewPage = dashboardPage.goToOverviewPage();
+	salesReportsPage = dashboardPage.goToSalesReportsPage();
 	}
 
 	@Test(priority = 1, groups="sanity")
 	@Description("verify Customer  Page Title Test....")
 	@Severity(SeverityLevel.NORMAL)
 	public void verifyHomePageTitleTest() {
-	String title = customerPage.getCustomerPageTitle();
+	String title = salesTransationPage.getCustomerPageTitle();
 	System.out.println("home page title is : " + title);
-	Assert.assertEquals(title, AppConstants.OVERVIEW_PAGE_TITLE);
+	Assert.assertEquals(title, AppConstants.SALESREPORTS_PAGE_TITLE);
 				
 	}
 }

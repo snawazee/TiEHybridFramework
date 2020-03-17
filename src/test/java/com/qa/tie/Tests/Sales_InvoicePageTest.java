@@ -21,7 +21,7 @@ import io.qameta.allure.SeverityLevel;
 
 @Epic("Invoice  page features")
 @Feature("Invoice Page Test")
-public class InvoicePageTest {
+public class Sales_InvoicePageTest {
 
 	WebDriver driver;
 	BasePage basePage;

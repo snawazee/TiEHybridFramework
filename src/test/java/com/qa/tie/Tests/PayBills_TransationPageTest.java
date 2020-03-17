@@ -1,6 +1,5 @@
 package com.qa.tie.Tests;
 
-
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -10,11 +9,13 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.qa.tie.Base.BasePage;
+import com.qa.tie.Page.BillsPage;
 import com.qa.tie.Page.CustomerPage;
 import com.qa.tie.Page.DashboardPage;
 import com.qa.tie.Page.InvoicePage;
 import com.qa.tie.Page.LoginPage;
-import com.qa.tie.Page.SalesReportsPage;
+import com.qa.tie.Page.PayBillsOverviewPage;
+import com.qa.tie.Page.PayBills_TransactionPage;
 import com.qa.tie.Page.SalesTransactionPage;
 import com.qa.tie.Util.AppConstants;
 import com.qa.tie.Util.Credentials;
@@ -27,7 +28,7 @@ import io.qameta.allure.SeverityLevel;
 
 	@Epic("Invoice  page features")
 	@Feature("Invoice Page Test")
-	public class SalesReportsPageTest {
+	public class PayBills_TransationPageTest {
 
 	WebDriver driver;
 	BasePage basePage;
@@ -38,7 +39,10 @@ import io.qameta.allure.SeverityLevel;
 	InvoicePage invoicePage;
 	CustomerPage customerPage;
 	SalesTransactionPage salesTransationPage;
-	SalesReportsPage salesReportsPage;
+	BillsPage billsPage;
+	PayBillsOverviewPage paybillsOverviewPage;
+	PayBills_TransactionPage paybillsTransationPage;
+	
 
 	@BeforeTest(alwaysRun=true)
 	@Parameters(value={"browser"})
@@ -59,16 +63,16 @@ import io.qameta.allure.SeverityLevel;
 	loginPage = new LoginPage(driver);
 	userCred = new Credentials(prop.getProperty("username"), prop.getProperty("password"));
 	dashboardPage = loginPage.doLogin(userCred);
-	salesReportsPage = dashboardPage.goToSalesReportsPage();
+	paybillsTransationPage = dashboardPage.goToPayBillsTransationPage();
 	}
 
 	@Test(priority = 1, groups="sanity")
 	@Description("verify Customer  Page Title Test....")
 	@Severity(SeverityLevel.NORMAL)
 	public void verifyHomePageTitleTest() {
-	String title = salesTransationPage.getCustomerPageTitle();
+	String title = paybillsTransationPage.getCustomerPageTitle();
 	System.out.println("home page title is : " + title);
-	Assert.assertEquals(title, AppConstants.SALESREPORTS_PAGE_TITLE);
+	Assert.assertEquals(title, AppConstants.CUSTOMER_PAGE_TITLE);
 				
 	}
 }

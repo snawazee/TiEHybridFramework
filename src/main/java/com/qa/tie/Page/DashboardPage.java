@@ -220,25 +220,71 @@ public class DashboardPage extends BasePage {
 		clickOnSalesReportPage();
 		return new SalesReportsPage(driver);
 	}
+	
+	
+	public void clickOnBillsPage() {
+		elementUtil.waitForElementPresent(PayBillsMenu);
+		elementUtil.doClick(PayBillsMenu);
+		elementUtil.waitForElementPresent(BillsMenu);
+		elementUtil.doClick(BillsMenu);
+		
+	}
+	
+	public void clcikOnPayBillsOverviewPage() {
+		elementUtil.waitForElementPresent(PayBillsMenu);
+		elementUtil.doClick(PayBillsMenu);
+		elementUtil.waitForElementPresent(PayBillsOverview);
+		elementUtil.doClick(PayBillsOverview);
+		
+	}
+	
+	public void clickOnPayBills_TransactionPage() {
+		elementUtil.waitForElementPresent(PayBillsMenu);
+		elementUtil.doClick(PayBillsMenu);
+		elementUtil.waitForElementPresent(PayBillsTransactionMenu);
+		elementUtil.doClick(PayBillsTransactionMenu);
+		
+	}
+	
+	public void clickOnVendorPage() {
+		elementUtil.waitForElementPresent(PayBillsMenu);
+		elementUtil.doClick(PayBillsMenu);
+		elementUtil.waitForElementPresent(VendorMenu);
+		elementUtil.doClick(VendorMenu);
+		
+	}
 
 	public BillsPage goToBillsPage() {
-		// TODO Auto-generated method stub
-		return null;
+		clickOnBillsPage();
+		return new BillsPage(driver);
 	}
 
 	public PayBillsOverviewPage goToPayBillsOverviewPage() {
-		// TODO Auto-generated method stub
-		return null;
+		clcikOnPayBillsOverviewPage();
+		return new PayBillsOverviewPage(driver);
 	}
 
 	public PayBills_TransactionPage goToPayBillsTransationPage() {
-		// TODO Auto-generated method stub
-		return null;
+		clickOnPayBills_TransactionPage();
+		return new PayBills_TransactionPage(driver);
 	}
 
 	public VendorPage goToVendorPage() {
-		// TODO Auto-generated method stub
-		return null;
+		clickOnVendorPage();
+		return new VendorPage(driver);
+	}
+	
+	public void clickOnPayBillsreportsPage() {
+		elementUtil.waitForElementPresent(PayBillsMenu);
+		elementUtil.doClick(PayBillsMenu);
+		elementUtil.waitForElementPresent(PayBillsReport);
+		elementUtil.doClick(PayBillsReport);
+		
+	}
+
+	public PayBills_ReportsPage goToPayBillsReportsPage() {
+		clickOnPayBillsreportsPage();
+		return new PayBills_ReportsPage(driver);
 	}
 }
 

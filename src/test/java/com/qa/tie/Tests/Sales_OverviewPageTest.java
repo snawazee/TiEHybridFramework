@@ -9,13 +9,11 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.qa.tie.Base.BasePage;
-import com.qa.tie.Page.BillsPage;
 import com.qa.tie.Page.CustomerPage;
 import com.qa.tie.Page.DashboardPage;
 import com.qa.tie.Page.InvoicePage;
 import com.qa.tie.Page.LoginPage;
-import com.qa.tie.Page.PayBillsOverviewPage;
-import com.qa.tie.Page.SalesTransactionPage;
+import com.qa.tie.Page.OverviewPage;
 import com.qa.tie.Util.AppConstants;
 import com.qa.tie.Util.Credentials;
 
@@ -27,7 +25,7 @@ import io.qameta.allure.SeverityLevel;
 
 	@Epic("Invoice  page features")
 	@Feature("Invoice Page Test")
-	public class PayBillsOverviewPageTest {
+	public class Sales_OverviewPageTest {
 
 	WebDriver driver;
 	BasePage basePage;
@@ -37,9 +35,7 @@ import io.qameta.allure.SeverityLevel;
 	Credentials userCred;
 	InvoicePage invoicePage;
 	CustomerPage customerPage;
-	SalesTransactionPage salesTransationPage;
-	BillsPage billsPage;
-	PayBillsOverviewPage paybillsOverviewPage;
+	OverviewPage overviewPage;
 
 	@BeforeTest(alwaysRun=true)
 	@Parameters(value={"browser"})
@@ -60,16 +56,16 @@ import io.qameta.allure.SeverityLevel;
 	loginPage = new LoginPage(driver);
 	userCred = new Credentials(prop.getProperty("username"), prop.getProperty("password"));
 	dashboardPage = loginPage.doLogin(userCred);
-	paybillsOverviewPage = dashboardPage.goToPayBillsOverviewPage();
+	overviewPage = dashboardPage.goToOverviewPage();
 	}
 
 	@Test(priority = 1, groups="sanity")
 	@Description("verify Customer  Page Title Test....")
 	@Severity(SeverityLevel.NORMAL)
 	public void verifyHomePageTitleTest() {
-	String title = paybillsOverviewPage.getCustomerPageTitle();
+	String title = customerPage.getCustomerPageTitle();
 	System.out.println("home page title is : " + title);
-	Assert.assertEquals(title, AppConstants.PAYBILLSOVERVIEW_PAGE_TITLE);
+	Assert.assertEquals(title, AppConstants.OVERVIEW_PAGE_TITLE);
 				
 	}
 }
