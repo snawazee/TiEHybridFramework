@@ -3,15 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.tie.tests.InvoicePageTest">
+      <class name="com.qa.tie.Tests.InvoicePageTest">
         <methods>
-          <include name="FilterInvoiceWithCustomerTest"/>
-          <include name="verifyAllHeaderTest"/>
-          <include name="verifyAllSubMenuClickkableTest"/>
           <include name="setUp"/>
-          <include name="quitBrowser"/>
+          <include name="verifyHomePageTitleTest"/>
         </methods>
-      </class> <!-- com.qa.tie.tests.InvoicePageTest -->
+      </class> <!-- com.qa.tie.Tests.InvoicePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

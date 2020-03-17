@@ -148,9 +148,51 @@ public class DashboardPage extends BasePage {
 		
 	}
 	
+	public void clickOnInvoiceMenu() {
+		elementUtil.waitForElementPresent(SalesMenu);
+		elementUtil.doClick(SalesMenu);
+		elementUtil.waitForElementPresent(InvoiceMenu);
+		elementUtil.doClick(InvoiceMenu);
+		
+	}
+	
+	
 	public MyAccountPage goToMyAccountPage() {
 		clickOnMyAccountMenu();
 		return new MyAccountPage(driver);
+	}
+	
+	public InvoicePage goToInvoicePage() {
+		clickOnInvoiceMenu();
+		return new InvoicePage(driver);
+		
+		
+	}
+
+	public void clickOnCustomerPage() {
+		elementUtil.waitForElementPresent(SalesMenu);
+		elementUtil.doClick(SalesMenu);
+		elementUtil.waitForElementPresent(Customer);
+		elementUtil.doClick(Customer);
+		
+	}
+	
+	public void clickOnOverviewPage() {
+		elementUtil.waitForElementPresent(SalesMenu);
+		elementUtil.doClick(SalesMenu);
+		elementUtil.waitForElementPresent(SalesOverview);
+		elementUtil.doClick(SalesOverview);
+		
+	}
+	
+	public OverviewPage goToOverviewPage() {
+		clickOnOverviewPage();
+		return new OverviewPage(driver);
+	}
+	
+	public CustomerPage goToCustomerPage() {
+		clickOnCustomerPage();
+		return new CustomerPage(driver);
 	}
 }
 

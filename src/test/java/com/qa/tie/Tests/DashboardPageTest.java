@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 import com.qa.tie.Base.BasePage;
 import com.qa.tie.Page.DashboardPage;
+import com.qa.tie.Page.InvoicePage;
 import com.qa.tie.Page.LoginPage;
 import com.qa.tie.Util.AppConstants;
 import com.qa.tie.Util.Credentials;
@@ -32,6 +33,7 @@ public class DashboardPageTest {
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
 	Credentials userCred;
+	InvoicePage invoicePage;
 
 	@BeforeTest(alwaysRun=true)
 	@Parameters(value={"browser"})
@@ -53,6 +55,7 @@ public class DashboardPageTest {
 		loginPage = new LoginPage(driver);
 		userCred = new Credentials(prop.getProperty("username"), prop.getProperty("password"));
 		dashboardPage = loginPage.doLogin(userCred);
+		invoicePage = dashboardPage.goToInvoicePage();
 	}
 
 	@Test(priority = 1, groups="sanity")

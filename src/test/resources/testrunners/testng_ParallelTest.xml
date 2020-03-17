@@ -3,8 +3,8 @@
 <suite name="TiE Regression Suite" thread-count="2" parallel="tests">
 
 	<listeners>
-<!-- 		<listener class-name="com.qa.tie.listeners.ExtentReportListener" />-->	
- 			<listener class-name="com.qa.tie.listeners.TestAllureListener" />
+<!-- 		<listener class-name="com.qa.tie.Listeners.ExtentReportListener" />-->	
+ 			<listener class-name="com.qa.tie.Listeners.TestAllureListener" />
 
 	</listeners>
 
@@ -13,9 +13,9 @@
 		<parameter name="browser" value="firefox" />
 		
 		<classes>
-			<!-- class name="com.qa.tie.tests.LoginPageTest" /> -->
-			<!-- class name="com.qa.tie.tests.HomePageTest" /> -->
-			<!-- class name="com.qa.tie.tests.MyAccountPageTest" /> -->
+			<!-- class name="com.qa.tie.Tests.LoginPageTest" /> -->
+			<!-- class name="com.qa.tie.Tests.HomePageTest" /> -->
+			<!-- class name="com.qa.tie.Tests.MyAccountPageTest" /> -->
 		</classes>
 	</test>
 
@@ -23,10 +23,10 @@
 			thread-count="3" parallel="classes">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<!-- class name="com.qa.tie.tests.LoginPageTest" /> -->
-			<!-- class name="com.qa.tie.tests.HomePageTest" /> -->
-			<!-- class name="com.qa.tie.tests.MyAccountPageTest" />  -->
-			<class name="com.qa.tie.tests.InvoicePageTest"></class>
+			<!-- class name="com.qa.tie.Tests.LoginPageTest" /> -->
+			<!-- class name="com.qa.tie.Tests.HomePageTest" /> -->
+			<!-- class name="com.qa.tie.Tests.MyAccountPageTest" />  -->
+			<class name="com.qa.tie.Tests.InvoicePageTest"></class>
 		</classes>
 	</test>
 

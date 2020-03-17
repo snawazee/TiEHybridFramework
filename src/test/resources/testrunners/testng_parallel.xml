@@ -4,7 +4,7 @@
 <suite name="TiE Regression Suite">
 
 	<listeners>
-		<listener class-name="com.qa.tie.listeners.ExtentReportListener" />
+		<listener class-name="com.qa.tie.Listeners.ExtentReportListener" />
 	</listeners>
 
 	<test name="TiE Functional Regression Test - FF"
@@ -12,8 +12,8 @@
 		<parameter name="browser" value="firefox" />
 
 		<classes>
-			<!-- class name="com.qa.tie.tests.LoginPageTest" /> -->
- 			<!-- class name="com.qa.tie.tests.HomePageTest" /> -->
+			<!-- class name="com.qa.tie.Tests.LoginPageTest" /> -->
+ 			<!-- class name="com.qa.tie.Tests.HomePageTest" /> -->
 
 		</classes>
 	</test>
@@ -23,10 +23,10 @@
 		<parameter name="browser" value="chrome" />
 
 		<classes>
-			<!-- class name="com.qa.tie.tests.LoginPageTest" /> -->
-			<!-- class name="com.qa.tie.tests.HomePageTest" /> -->
-			<!-- class name="com.qa.tie.tests.ContactsPageTest" /> -->
-			<class name="com.qa.tie.tests.InvoicePageTest" />
+			<!-- class name="com.qa.tie.Tests.LoginPageTest" /> -->
+			<!-- class name="com.qa.tie.Tests.HomePageTest" /> -->
+			<!-- class name="com.qa.tie.Tests.ContactsPageTest" /> -->
+			<class name="com.qa.tie.Tests.InvoicePageTest" />
 		</classes>
 	 </test>
 

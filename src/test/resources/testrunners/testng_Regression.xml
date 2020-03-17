@@ -5,10 +5,10 @@
 
 	<listeners>
 
-		<!-- <listener class-name="com.qa.tie.listeners.TesultsListener" />-->
-		<!-- <listener class-name="com.qa.tie.listeners.ExtentReportListener" />-->
-		<listener class-name="com.qa.tie.listeners.TestAllureListener" /> 
-		<listener class-name="com.qa.tie.listeners.ScreenshotListener" />
+		<!-- <listener class-name="com.qa.tie.Listeners.TesultsListener" />-->
+		<!-- <listener class-name="com.qa.tie.Listeners.ExtentReportListener" />-->
+		<listener class-name="com.qa.tie.Listeners.TestAllureListener" /> 
+		<listener class-name="com.qa.tie.Listeners.ScreenshotListener" />
 
 
 
@@ -17,12 +17,11 @@
 	<test name="TiE Functional Regression Test">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<!-- class name="com.qa.tie.tests.LoginPageTest" /> -->
-			<!-- class name="com.qa.tie.tests.HomePageTest" /> -->
-			<!-- class name="com.qa.tie.tests.ContactsPageTest" /> -->
-			<class name="com.qa.tie.tests.InvoicePageTest"></class>
+			<!-- class name="com.qa.tie.Tests.LoginPageTest" /> -->
+			<!-- class name="com.qa.tie.Tests.HomePageTest" /> -->
+			<!-- class name="com.qa.tie.Tests.ContactsPageTest" /> -->
+			<class name="com.qa.tie.Tests.InvoicePageTest"></class>
 			
-
 		</classes>
 	</test>
 </suite> 
